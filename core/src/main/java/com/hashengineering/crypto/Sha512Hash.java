@@ -17,8 +17,8 @@
 package com.hashengineering.crypto;
 
 import com.google.common.io.ByteStreams;
-import org.pivxj.core.Sha256Hash;
-import org.pivxj.core.Utils;
+import org.phorej.core.Sha256Hash;
+import org.phorej.core.Utils;
 import org.spongycastle.util.encoders.Hex;
 
 import java.io.File;

@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.pivxj.core.NetworkParameters;
-import org.pivxj.core.TransactionInput;
+import org.phorej.core.NetworkParameters;
+import org.phorej.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.

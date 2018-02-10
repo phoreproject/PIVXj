@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.pivxj.core.MasterNodePaymentWinner;
+import org.phorej.core.MasterNodePaymentWinner;
 
 import java.util.ArrayList;
 

@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.pivxj.core.Utils;
-import org.pivxj.crypto.MnemonicCode;
-import org.pivxj.wallet.DeterministicSeed;
+import org.phorej.core.Utils;
+import org.phorej.crypto.MnemonicCode;
+import org.phorej.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;
