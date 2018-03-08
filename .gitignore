@@ -12,6 +12,7 @@ libs/
 *.wallet
 *.tmp
 *.dat
+*.swp
 checkpoints
 checkpoints-testnet.txt
 checkpoints.txt

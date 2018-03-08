@@ -1,15 +1,15 @@
 package org.darkcoinj;
 
 import com.google.common.collect.Lists;
-import org.pivxj.core.*;
-import org.pivxj.utils.Threading;
+import org.phorej.core.*;
+import org.phorej.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.pivxj.core.DarkCoinSystem.fMasterNode;
+import static org.phorej.core.DarkCoinSystem.fMasterNode;
 
 /**
  * Created by Eric on 2/8/2015.

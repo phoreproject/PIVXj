@@ -20,15 +20,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.pivxj</groupId>
-        <artifactId>pivxj-parent</artifactId>
+        <groupId>org.phorej</groupId>
+        <artifactId>phorej-parent</artifactId>
         <version>0.14.3-12.1</version>
     </parent>
 
-    <artifactId>pivxj-core</artifactId>
+    <artifactId>phorej-core</artifactId>
 
-    <name>dashj</name>
-    <description>A Java Pivx library</description>
+    <name>phorej</name>
+    <description>A Java Phorej library</description>
 
     <packaging>jar</packaging>
 
