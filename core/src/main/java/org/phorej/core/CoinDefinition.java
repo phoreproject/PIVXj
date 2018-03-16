@@ -111,7 +111,7 @@ public class CoinDefinition {
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
         "dns0.phore.io",
-        "phore.seed.rho.industries",
+        "phore.seed.rho.industries"
     };
 
     public static int minBroadcastConnections = 3;   //0 for default; we need more peers.
