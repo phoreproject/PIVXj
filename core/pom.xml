@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.phorej</groupId>
         <artifactId>phorej-parent</artifactId>
-        <version>0.14.3-12.1</version>
+        <version>0.14.4-12.1</version>
     </parent>
 
     <artifactId>phorej-core</artifactId>
