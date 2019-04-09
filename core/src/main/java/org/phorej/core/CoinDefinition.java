@@ -111,9 +111,9 @@ public class CoinDefinition {
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
         "seed1.helix-crypto.nl",
-        "seed2.helix-crypto.nl"
-        "seed3.helix-crypto.nl"
-        "seed4.helix-crypto.nl"
+        "seed2.helix-crypto.nl",
+        "seed3.helix-crypto.nl",
+        "seed4.helix-crypto.nl",
         "seed5.helix-crypto.nl"
     };
 
