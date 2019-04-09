@@ -86,7 +86,7 @@ public class TestWithPeerGroup extends TestWithNetworkConnections {
     }
 
     protected boolean blockJobs = false;
-    protected final Semahelix jobBlocks = new Semahelix(0);
+    protected final Semaphore jobBlocks = new Semaphore(0);
 
     private PeerGroup createPeerGroup(final ClientConnectionManager manager) {
         return new PeerGroup(PARAMS, blockChain, manager) {

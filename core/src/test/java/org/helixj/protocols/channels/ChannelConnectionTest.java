@@ -60,7 +60,7 @@ public class ChannelConnectionTest extends TestWithWallet {
     private AtomicBoolean fail;
     private BlockingQueue<Transaction> broadcasts;
     private TransactionBroadcaster mockBroadcaster;
-    private Semahelix broadcastTxPause;
+    private Semaphore broadcastTxPause;
 
     private static final TransactionBroadcaster failBroadcaster = new TransactionBroadcaster() {
         @Override
@@ -123,7 +123,7 @@ public class ChannelConnectionTest extends TestWithWallet {
         // Set up a way to monitor broadcast transactions. When you expect a broadcast, you must release a permit
         // to the broadcastTxPause semahelix so state can be queried in between.
         broadcasts = new LinkedBlockingQueue<Transaction>();
-        broadcastTxPause = new Semahelix(0);
+        broadcastTxPause = new Semaphore(0);
         mockBroadcaster = new TransactionBroadcaster() {
             @Override
             public TransactionBroadcast broadcastTransaction(Transaction tx) {
