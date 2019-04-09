@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.Utils;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 
 /**
  * A MnemonicCode object may be used to convert between binary seed values and

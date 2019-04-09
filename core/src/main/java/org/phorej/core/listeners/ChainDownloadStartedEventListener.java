@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 /**
  * <p>Implementors can listen to events like blocks being downloaded/transactions being broadcast/connect/disconnects,

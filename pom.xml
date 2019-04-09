@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.phorej</groupId>
-  <artifactId>phorej-parent</artifactId>
+  <groupId>org.helixj</groupId>
+  <artifactId>helixj-parent</artifactId>
   <version>0.14.4-12.1</version>
   <packaging>pom</packaging>
 
@@ -27,9 +27,9 @@
     <url>scm:git:https://github.com/bitcoinj/darkcoinj</url>
   </scm>
 
-  <name>phorej Parent</name>
-  <description>Provides the common configuration for the phorej modules</description>
-  <url>https://phore.io/phorej/</url>
+  <name>helixj Parent</name>
+  <description>Provides the common configuration for the helixj modules</description>
+  <url>https://phore.io/helixj/</url>
 
   <licenses>
     <license>

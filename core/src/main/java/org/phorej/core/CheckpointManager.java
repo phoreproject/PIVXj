@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.FullPrunedBlockStore;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.FullPrunedBlockStore;
 import com.google.common.base.Charsets;
 import com.google.common.hash.HashCode;
 import com.google.common.hash.Hasher;
@@ -55,7 +55,7 @@ import static com.google.common.base.Preconditions.*;
  * </ol>
  *
  * <p>Checkpoints are used by the SPV {@link BlockChain} to initialize fresh
- * {@link org.phorej.store.SPVBlockStore}s. They are not used by fully validating mode, which instead has a
+ * {@link org.helixj.store.SPVBlockStore}s. They are not used by fully validating mode, which instead has a
  * different concept of checkpoints that are used to hard-code the validity of blocks that violate BIP30 (duplicate
  * coinbase transactions). Those "checkpoints" can be found in NetworkParameters.</p>
  *

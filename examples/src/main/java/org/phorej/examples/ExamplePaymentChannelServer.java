@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.phorej.core.Coin;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.VerificationException;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.RegTestParams;
-import org.phorej.protocols.channels.*;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.WalletExtension;
+import org.helixj.core.Coin;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.VerificationException;
+import org.helixj.kits.WalletAppKit;
+import org.helixj.params.RegTestParams;
+import org.helixj.protocols.channels.*;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.*;
 import com.google.common.net.*;
 import com.google.common.util.concurrent.*;
-import org.phorej.core.listeners.*;
-import org.phorej.net.discovery.*;
-import org.phorej.testing.*;
-import org.phorej.utils.*;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.listeners.*;
+import org.helixj.net.discovery.*;
+import org.helixj.testing.*;
+import org.helixj.utils.*;
+import org.helixj.wallet.Wallet;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -36,7 +36,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-import static org.phorej.core.Coin.*;
+import static org.helixj.core.Coin.*;
 import static org.junit.Assert.*;
 
 

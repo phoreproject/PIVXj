@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
 import com.google.protobuf.ByteString;
 import org.junit.Before;

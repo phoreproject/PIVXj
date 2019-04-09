@@ -19,21 +19,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.phorej</groupId>
-        <artifactId>phorej-parent</artifactId>
+        <groupId>org.helixj</groupId>
+        <artifactId>helixj-parent</artifactId>
         <version>0.14.3-12.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phorej-examples</artifactId>
+    <artifactId>helixj-examples</artifactId>
 
-    <name>phorej Examples</name>
-    <description>A collection of examples using the phorej library</description>
+    <name>helixj Examples</name>
+    <description>A collection of examples using the helixj library</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.phorej</groupId>
-            <artifactId>phorej-core</artifactId>
+            <groupId>org.helixj</groupId>
+            <artifactId>helixj-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>

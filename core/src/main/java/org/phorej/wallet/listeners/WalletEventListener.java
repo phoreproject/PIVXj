@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.helixj.wallet.listeners;
 
-import org.phorej.core.listeners.TransactionConfidenceEventListener;
+import org.helixj.core.listeners.TransactionConfidenceEventListener;
 
 /**
  * <p>Common interface for wallet changes and transactions.</p>

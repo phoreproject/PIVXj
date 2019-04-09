@@ -14,8 +14,8 @@
 
 package wallettemplate.controls;
 
-import org.phorej.core.Address;
-import org.phorej.uri.PhoreURI;
+import org.helixj.core.Address;
+import org.helixj.uri.PhoreURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;

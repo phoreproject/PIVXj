@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.core.*;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static org.phorej.testing.FakeTxBuilder.createFakeBlock;
-import static org.phorej.testing.FakeTxBuilder.createFakeTx;
+import static org.helixj.testing.FakeTxBuilder.createFakeBlock;
+import static org.helixj.testing.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

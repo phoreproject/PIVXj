@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.core.TransactionConfidence.*;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.params.*;
-import org.phorej.script.*;
-import org.phorej.testing.*;
+import org.helixj.core.TransactionConfidence.*;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.params.*;
+import org.helixj.script.*;
+import org.helixj.testing.*;
 import org.easymock.*;
 import org.junit.*;
 
 import java.math.BigInteger;
 import java.util.*;
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.*;

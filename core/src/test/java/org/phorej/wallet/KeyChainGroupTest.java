@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.*;
-import org.phorej.crypto.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.helixj.core.*;
+import org.helixj.crypto.*;
+import org.helixj.params.MainNetParams;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;

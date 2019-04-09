@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 import static com.google.common.base.Preconditions.*;
 

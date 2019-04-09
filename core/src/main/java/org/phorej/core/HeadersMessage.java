@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

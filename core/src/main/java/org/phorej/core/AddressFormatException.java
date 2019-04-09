@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 @SuppressWarnings("serial")
 public class AddressFormatException extends IllegalArgumentException {

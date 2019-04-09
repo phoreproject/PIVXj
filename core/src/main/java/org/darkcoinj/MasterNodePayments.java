@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.phorej.core.MasterNodePaymentWinner;
+import org.helixj.core.MasterNodePaymentWinner;
 
 import java.util.ArrayList;
 

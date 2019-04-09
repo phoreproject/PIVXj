@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 /**
  * <p>Represents the "getdata" P2P network message, which requests the contents of blocks or transactions given their

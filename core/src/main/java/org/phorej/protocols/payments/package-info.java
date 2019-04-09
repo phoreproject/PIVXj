@@ -16,4 +16,4 @@
  * The BIP70 payment protocol wraps Bitcoin transactions and adds various useful features like memos, refund addresses
  * and authentication.
  */
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;

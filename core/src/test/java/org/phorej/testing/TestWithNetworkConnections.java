@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.core.listeners.PreMessageReceivedEventListener;
-import org.phorej.core.*;
-import org.phorej.net.*;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.listeners.PeerDisconnectedEventListener;
+import org.helixj.core.listeners.PreMessageReceivedEventListener;
+import org.helixj.core.*;
+import org.helixj.net.*;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.util.concurrent.SettableFuture;
 

@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.X509Utils;
-import org.phorej.params.TestNet3Params;
-import org.phorej.params.UnitTestParams;
-import org.phorej.protocols.payments.PaymentProtocol.Output;
-import org.phorej.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.phorej.protocols.payments.PaymentProtocolException.PkiVerificationException;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.testing.FakeTxBuilder;
+import org.helixj.core.*;
+import org.helixj.crypto.X509Utils;
+import org.helixj.params.TestNet3Params;
+import org.helixj.params.UnitTestParams;
+import org.helixj.protocols.payments.PaymentProtocol.Output;
+import org.helixj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.helixj.protocols.payments.PaymentProtocolException.PkiVerificationException;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.testing.FakeTxBuilder;
 import org.bitcoin.protocols.payments.Protos;
 import org.bitcoin.protocols.payments.Protos.Payment;
 import org.bitcoin.protocols.payments.Protos.PaymentACK;

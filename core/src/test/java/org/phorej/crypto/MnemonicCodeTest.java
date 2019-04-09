@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.Utils;
+import org.helixj.core.Utils;
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 
 public class MnemonicCodeTest {

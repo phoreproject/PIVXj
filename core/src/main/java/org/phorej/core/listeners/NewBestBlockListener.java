@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.StoredBlock;
-import org.phorej.core.VerificationException;
+import org.helixj.core.StoredBlock;
+import org.helixj.core.VerificationException;
 
 /**
  * Listener interface for when a new block on the best chain is seen.
@@ -26,8 +26,8 @@ public interface NewBestBlockListener {
     /**
      * Called when a new block on the best chain is seen, after relevant
      * transactions are extracted and sent to us via either
-     * {@link TransactionReceivedInBlockListener#receiveFromBlock(org.phorej.core.Transaction, org.phorej.core.StoredBlock, org.phorej.core.BlockChain.NewBlockType, int relativityOffset)}
-     * or {@link TransactionReceivedInBlockListener#notifyTransactionIsInBlock(org.phorej.core.Sha256Hash, org.phorej.core.StoredBlock, org.phorej.core.BlockChain.NewBlockType, int)}.
+     * {@link TransactionReceivedInBlockListener#receiveFromBlock(org.helixj.core.Transaction, org.helixj.core.StoredBlock, org.helixj.core.BlockChain.NewBlockType, int relativityOffset)}
+     * or {@link TransactionReceivedInBlockListener#notifyTransactionIsInBlock(org.helixj.core.Sha256Hash, org.helixj.core.StoredBlock, org.helixj.core.BlockChain.NewBlockType, int)}.
      * If this block is causing a re-organise to a new chain, this method is NOT
      * called even though the block may be the new best block: your reorganize
      * implementation is expected to do whatever would normally be done do for a

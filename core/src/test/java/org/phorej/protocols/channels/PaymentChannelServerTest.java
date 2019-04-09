@@ -12,12 +12,12 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.Coin;
-import org.phorej.core.TransactionBroadcaster;
-import org.phorej.core.Utils;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.Coin;
+import org.helixj.core.TransactionBroadcaster;
+import org.helixj.core.Utils;
+import org.helixj.wallet.Wallet;
 import org.bitcoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.junit.Before;

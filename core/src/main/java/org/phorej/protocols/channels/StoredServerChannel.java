@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.*;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class StoredServerChannel {
     }
 
     /**
-     * If a handler is connected, call its {@link org.phorej.protocols.channels.PaymentChannelServer#close()}
+     * If a handler is connected, call its {@link org.helixj.protocols.channels.PaymentChannelServer#close()}
      * method thus disconnecting the TCP connection.
      */
     synchronized void closeConnectedHandler() {

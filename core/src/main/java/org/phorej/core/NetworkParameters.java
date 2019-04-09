@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.Objects;
-import org.phorej.net.discovery.HttpDiscovery;
-import org.phorej.params.*;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.script.ScriptChunk;
-import org.phorej.script.ScriptOpCodes;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.utils.MonetaryFormat;
+import org.helixj.net.discovery.HttpDiscovery;
+import org.helixj.params.*;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.script.ScriptChunk;
+import org.helixj.script.ScriptOpCodes;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.utils.MonetaryFormat;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -34,8 +34,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.EnumSet;
 
-import static org.phorej.core.Coin.*;
-import org.phorej.utils.VersionTally;
+import static org.helixj.core.Coin.*;
+import org.helixj.utils.VersionTally;
 
 /**
  * <p>NetworkParameters contains the data needed for working with an instantiation of a Bitcoin chain.</p>
@@ -312,7 +312,7 @@ public abstract class NetworkParameters {
         return addrSeeds;
     }
 
-    /** Returns discovery objects for seeds implementing the Cartographer protocol. See {@link org.phorej.net.discovery.HttpDiscovery} for more info. */
+    /** Returns discovery objects for seeds implementing the Cartographer protocol. See {@link org.helixj.net.discovery.HttpDiscovery} for more info. */
     public HttpDiscovery.Details[] getHttpSeeds() {
         return httpSeeds;
     }
@@ -343,7 +343,7 @@ public abstract class NetworkParameters {
     }
 
     /**
-     * First byte of a base58 encoded address. See {@link org.phorej.core.Address}. This is the same as acceptableAddressCodes[0] and
+     * First byte of a base58 encoded address. See {@link org.helixj.core.Address}. This is the same as acceptableAddressCodes[0] and
      * is the one used for "normal" addresses. Other types of address may be encountered with version codes found in
      * the acceptableAddressCodes array.
      */
@@ -358,7 +358,7 @@ public abstract class NetworkParameters {
         return p2shHeader;
     }
 
-    /** First byte of a base58 encoded dumped private key. See {@link org.phorej.core.DumpedPrivateKey}. */
+    /** First byte of a base58 encoded dumped private key. See {@link org.helixj.core.DumpedPrivateKey}. */
     public int getDumpedPrivateKeyHeader() {
         return dumpedPrivateKeyHeader;
     }
@@ -399,7 +399,7 @@ public abstract class NetworkParameters {
     }
 
     /**
-     * The key used to sign {@link org.phorej.core.AlertMessage}s. You can use {@link org.phorej.core.ECKey#verify(byte[], byte[], byte[])} to verify
+     * The key used to sign {@link org.helixj.core.AlertMessage}s. You can use {@link org.helixj.core.ECKey#verify(byte[], byte[], byte[])} to verify
      * signatures using it.
      */
     public byte[] getAlertSigningKey() {

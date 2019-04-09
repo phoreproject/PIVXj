@@ -1,8 +1,8 @@
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.params.RegTestParams;
+import org.helixj.core.Transaction;
+import org.helixj.core.TransactionConfidence;
+import org.helixj.params.RegTestParams;
 
 /**
  * Created by Eric on 1/15/2016.

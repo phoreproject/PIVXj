@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.core.*;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.helixj.core.*;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Random;
 
-import static org.phorej.core.Coin.*;
+import static org.helixj.core.Coin.*;
 import static com.google.common.base.Preconditions.checkState;
 
 public class FakeTxBuilder {

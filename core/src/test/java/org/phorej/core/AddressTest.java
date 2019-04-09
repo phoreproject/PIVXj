@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
-import org.phorej.params.Networks;
-import org.phorej.params.TestNet3Params;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.Networks;
+import org.helixj.params.TestNet3Params;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -31,7 +31,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class AddressTest {

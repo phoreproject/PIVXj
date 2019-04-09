@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 import com.google.common.collect.*;
-import org.phorej.core.*;
-import org.phorej.crypto.*;
-import org.phorej.params.*;
-import org.phorej.script.*;
-import org.phorej.testing.FakeTxBuilder;
-import org.phorej.wallet.DefaultRiskAnalysis.*;
+import org.helixj.core.*;
+import org.helixj.crypto.*;
+import org.helixj.params.*;
+import org.helixj.script.*;
+import org.helixj.testing.FakeTxBuilder;
+import org.helixj.wallet.DefaultRiskAnalysis.*;
 import org.junit.*;
 
 import java.util.*;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.script.ScriptOpCodes.*;
+import static org.helixj.core.Coin.*;
+import static org.helixj.script.ScriptOpCodes.*;
 import static org.junit.Assert.*;
 
 public class DefaultRiskAnalysisTest {

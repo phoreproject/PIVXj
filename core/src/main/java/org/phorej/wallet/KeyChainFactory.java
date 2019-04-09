@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.crypto.KeyCrypter;
+import org.helixj.crypto.DeterministicKey;
+import org.helixj.crypto.KeyCrypter;
 
 /**
  * Factory interface for creation keychains while de-serializing a wallet.

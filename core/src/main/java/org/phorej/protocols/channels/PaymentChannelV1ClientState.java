@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
-import org.phorej.core.*;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.wallet.AllowUnconfirmedCoinSelector;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.wallet.AllowUnconfirmedCoinSelector;
+import org.helixj.wallet.SendRequest;
+import org.helixj.wallet.Wallet;
 import org.spongycastle.crypto.params.KeyParameter;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
@@ -116,7 +116,7 @@ public class PaymentChannelV1ClientState extends PaymentChannelClientState {
      * Creates the initial multisig contract and incomplete refund transaction which can be requested at the appropriate
      * time using {@link PaymentChannelV1ClientState#getIncompleteRefundTransaction} and
      * {@link PaymentChannelV1ClientState#getContract()}. The way the contract is crafted can be adjusted by
-     * overriding {@link PaymentChannelV1ClientState#editContractSendRequest(org.phorej.core.Wallet.SendRequest)}.
+     * overriding {@link PaymentChannelV1ClientState#editContractSendRequest(org.helixj.core.Wallet.SendRequest)}.
      * By default unconfirmed coins are allowed to be used, as for micropayments the risk should be relatively low.
      * @param userKey Key derived from a user password, needed for any signing when the wallet is encrypted.
      *                  The wallet KeyCrypter is assumed.

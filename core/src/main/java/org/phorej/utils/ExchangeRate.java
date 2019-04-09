@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigInteger;
 
-import org.phorej.core.Coin;
+import org.helixj.core.Coin;
 
 import com.google.common.base.Objects;
 

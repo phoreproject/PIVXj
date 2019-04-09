@@ -13,10 +13,10 @@
  */
 
 /**
- * The core package contains classes for network messages like {@link org.phorej.core.Block} and
- * {@link org.phorej.core.Transaction}, peer connectivity via {@link org.phorej.core.PeerGroup},
+ * The core package contains classes for network messages like {@link org.helixj.core.Block} and
+ * {@link org.helixj.core.Transaction}, peer connectivity via {@link org.helixj.core.PeerGroup},
  * and block chain management.
  * If what you're doing can be described as basic bitcoin tasks, the code is probably found here.
  * To learn more please consult the documentation on the website.
  */
-package org.phorej.core;
+package org.helixj.core;

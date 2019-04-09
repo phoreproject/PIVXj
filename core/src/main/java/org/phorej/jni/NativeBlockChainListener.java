@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 import java.util.List;
-import org.phorej.core.listeners.NewBestBlockListener;
-import org.phorej.core.listeners.ReorganizeListener;
-import org.phorej.core.listeners.TransactionReceivedInBlockListener;
+import org.helixj.core.listeners.NewBestBlockListener;
+import org.helixj.core.listeners.ReorganizeListener;
+import org.helixj.core.listeners.TransactionReceivedInBlockListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

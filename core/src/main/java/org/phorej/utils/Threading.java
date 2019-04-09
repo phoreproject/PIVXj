@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.CoinDefinition;
+import org.helixj.core.CoinDefinition;
 import com.google.common.util.concurrent.CycleDetectingLockFactory;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.Uninterruptibles;
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

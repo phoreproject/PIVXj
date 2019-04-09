@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.io.ByteStreams;
 
-import org.phorej.core.AbstractBlockChain.NewBlockType;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet2Params;
-import org.phorej.params.TestNet3Params;
-import org.phorej.params.UnitTestParams;
-import org.phorej.script.ScriptOpCodes;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.Wallet.BalanceType;
+import org.helixj.core.AbstractBlockChain.NewBlockType;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet2Params;
+import org.helixj.params.TestNet3Params;
+import org.helixj.params.UnitTestParams;
+import org.helixj.script.ScriptOpCodes;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.Wallet.BalanceType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BlockTest {

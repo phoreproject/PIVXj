@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.core.Utils;
-import org.phorej.crypto.KeyCrypter;
-import org.phorej.crypto.KeyCrypterException;
-import org.phorej.crypto.KeyCrypterScrypt;
-import org.phorej.utils.Threading;
+import org.helixj.core.BloomFilter;
+import org.helixj.core.ECKey;
+import org.helixj.core.Utils;
+import org.helixj.crypto.KeyCrypter;
+import org.helixj.crypto.KeyCrypterException;
+import org.helixj.crypto.KeyCrypterScrypt;
+import org.helixj.utils.Threading;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
-import org.phorej.wallet.listeners.AbstractKeyChainEventListener;
+import org.helixj.wallet.listeners.AbstractKeyChainEventListener;
 import org.junit.Before;
 import org.junit.Test;
 

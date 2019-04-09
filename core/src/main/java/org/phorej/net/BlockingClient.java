@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
 import com.google.common.util.concurrent.*;
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

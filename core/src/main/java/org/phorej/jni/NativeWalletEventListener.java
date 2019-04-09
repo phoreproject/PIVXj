@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.Transaction;
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletEventListener;
+import org.helixj.core.Coin;
+import org.helixj.core.ECKey;
+import org.helixj.core.Transaction;
+import org.helixj.script.Script;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletEventListener;
 
 import java.util.List;
 

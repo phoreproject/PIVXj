@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
-import org.phorej.core.CoinDefinition;
+import org.helixj.core.CoinDefinition;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.phorej.core.Block;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.StoredBlock;
-import org.phorej.core.VerificationException;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.helixj.core.Block;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.StoredBlock;
+import org.helixj.core.VerificationException;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
 
 import static com.google.common.base.Preconditions.checkState;
 

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.StoredBlock;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.StoredBlock;
 
 /**
  * An implementor of BlockStore saves StoredBlock objects to disk. Different implementations store them in
@@ -46,8 +46,8 @@ public interface BlockStore {
 
     /**
      * Returns the {@link StoredBlock} that represents the top of the chain of greatest total work. Note that this
-     * can be arbitrarily expensive, you probably should use {@link org.phorej.core.BlockChain#getChainHead()}
-     * or perhaps {@link org.phorej.core.BlockChain#getBestChainHeight()} which will run in constant time and
+     * can be arbitrarily expensive, you probably should use {@link org.helixj.core.BlockChain#getChainHead()}
+     * or perhaps {@link org.helixj.core.BlockChain#getBestChainHeight()} which will run in constant time and
      * not take any heavyweight locks.
      */
     StoredBlock getChainHead() throws BlockStoreException;
@@ -61,7 +61,7 @@ public interface BlockStore {
     void close() throws BlockStoreException;
 
     /**
-     * Get the {@link org.phorej.core.NetworkParameters} of this store.
+     * Get the {@link org.helixj.core.NetworkParameters} of this store.
      * @return The network params.
      */
     NetworkParameters getParams();

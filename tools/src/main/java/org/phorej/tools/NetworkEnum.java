@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.helixj.tools;
 
 public enum NetworkEnum {
     MAIN,

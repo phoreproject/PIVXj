@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.Utils;
+import org.helixj.core.Utils;
 
 import org.junit.Before;
 import org.junit.Test;

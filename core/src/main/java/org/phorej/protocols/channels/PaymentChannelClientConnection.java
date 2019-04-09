@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.InsufficientMoneyException;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.Utils;
-import org.phorej.net.NioClient;
-import org.phorej.net.ProtobufConnection;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.Coin;
+import org.helixj.core.ECKey;
+import org.helixj.core.InsufficientMoneyException;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.Utils;
+import org.helixj.net.NioClient;
+import org.helixj.net.ProtobufConnection;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -49,7 +49,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open. The server is requested to keep the channel open for
-     * {@link org.phorej.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
+     * {@link org.helixj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
      * seconds. If the server proposes a longer time the channel will be closed.
      *
      * @param server         The host/port pair where the server is listening.
@@ -75,7 +75,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open. The server is requested to keep the channel open for
-     * {@link org.phorej.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
+     * {@link org.helixj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
      * seconds. If the server proposes a longer time the channel will be closed.
      *
      * @param server          The host/port pair where the server is listening.

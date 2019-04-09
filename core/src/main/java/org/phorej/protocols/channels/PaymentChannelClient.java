@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.*;
-import org.phorej.protocols.channels.PaymentChannelCloseException.CloseReason;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -214,7 +214,7 @@ public class PaymentChannelClient implements IPaymentChannelClient {
      *                 attempt will be made to resume that channel.
      * @param timeWindow The time in seconds, relative to now, on how long this channel should be kept open. Note that is is
      *                   a proposal to the server. The server may in turn propose something different.
-     *                   See {@link org.phorej.protocols.channels.IPaymentChannelClient.ClientConnection#acceptExpireTime(long)}
+     *                   See {@link org.helixj.protocols.channels.IPaymentChannelClient.ClientConnection#acceptExpireTime(long)}
      * @param userKeySetup Key derived from a user password, used to decrypt myKey, if it is encrypted, during setup.
      * @param conn A callback listener which represents the connection to the server (forwards messages we generate to
      *             the server)
@@ -239,7 +239,7 @@ public class PaymentChannelClient implements IPaymentChannelClient {
      *                 attempt will be made to resume that channel.
      * @param timeWindow The time in seconds, relative to now, on how long this channel should be kept open. Note that is is
      *                   a proposal to the server. The server may in turn propose something different.
-     *                   See {@link org.phorej.protocols.channels.IPaymentChannelClient.ClientConnection#acceptExpireTime(long)}
+     *                   See {@link org.helixj.protocols.channels.IPaymentChannelClient.ClientConnection#acceptExpireTime(long)}
      * @param userKeySetup Key derived from a user password, used to decrypt myKey, if it is encrypted, during setup.
      * @param conn A callback listener which represents the connection to the server (forwards messages we generate to
      *             the server)
@@ -566,7 +566,7 @@ public class PaymentChannelClient implements IPaymentChannelClient {
      * intending to reopen the channel later. There is likely little reason to use this in a stateless protocol.</p>
      *
      * <p>Note that this <b>MUST</b> still be called even after either
-     * {@link ClientConnection#destroyConnection(org.phorej.protocols.channels.PaymentChannelCloseException.CloseReason)} or
+     * {@link ClientConnection#destroyConnection(org.helixj.protocols.channels.PaymentChannelCloseException.CloseReason)} or
      * {@link PaymentChannelClient#settle()} is called, to actually handle the connection close logic.</p>
      */
     @Override

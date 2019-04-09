@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.BlockChain;
-import org.phorej.core.Context;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.StoredBlock;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.testing.FakeTxBuilder;
+import org.helixj.core.BlockChain;
+import org.helixj.core.Context;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.StoredBlock;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.testing.FakeTxBuilder;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;

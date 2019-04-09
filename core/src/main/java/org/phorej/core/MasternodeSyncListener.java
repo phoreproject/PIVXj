@@ -1,4 +1,4 @@
-package org.phorej.core;
+package org.helixj.core;
 
 /**
  * Created by Hash Engineering on 2/28/2016.

@@ -1,12 +1,12 @@
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.util.concurrent.ListenableFuture;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet2Params;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.Wallet;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet2Params;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.Wallet;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 

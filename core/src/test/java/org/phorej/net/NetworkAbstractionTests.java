@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
-import org.phorej.core.Utils;
+import org.helixj.core.Utils;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.paymentchannel.Protos;

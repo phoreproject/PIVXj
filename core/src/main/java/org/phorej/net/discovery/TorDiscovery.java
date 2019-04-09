@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.helixj.net.discovery;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
@@ -23,8 +23,8 @@ import com.subgraph.orchid.*;
 import com.subgraph.orchid.circuits.path.*;
 import com.subgraph.orchid.data.*;
 import com.subgraph.orchid.data.exitpolicy.*;
-import org.phorej.core.*;
-import org.phorej.utils.*;
+import org.helixj.core.*;
+import org.helixj.utils.*;
 import org.slf4j.*;
 
 import java.net.*;

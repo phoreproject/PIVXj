@@ -17,4 +17,4 @@
  * using SOCKS proxies, Tor, SSL etc). The code in this package implements a simple network abstraction a little like
  * what the Netty library provides, but with only what pivxj needs.
  */
-package org.phorej.net;
+package org.helixj.net;

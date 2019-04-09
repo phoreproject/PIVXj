@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 /**
  * Called when a new transaction is broadcast over the network.

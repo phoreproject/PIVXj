@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.core.*;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

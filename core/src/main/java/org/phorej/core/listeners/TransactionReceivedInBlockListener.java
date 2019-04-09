@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.BlockChain;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.StoredBlock;
-import org.phorej.core.Transaction;
-import org.phorej.core.VerificationException;
+import org.helixj.core.BlockChain;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.StoredBlock;
+import org.helixj.core.Transaction;
+import org.helixj.core.VerificationException;
 
 /**
  * Listener interface for when we receive a new block that contains a relevant

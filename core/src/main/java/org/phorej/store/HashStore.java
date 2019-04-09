@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.*;
-import org.phorej.utils.Threading;
+import org.helixj.core.*;
+import org.helixj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.wallet.Wallet;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.wallet.Wallet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,10 @@ import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.core.Utils.HEX;
-import static org.phorej.testing.FakeTxBuilder.createFakeBlock;
-import static org.phorej.testing.FakeTxBuilder.createFakeTx;
+import static org.helixj.core.Coin.*;
+import static org.helixj.core.Utils.HEX;
+import static org.helixj.testing.FakeTxBuilder.createFakeBlock;
+import static org.helixj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 public class ParseByteCacheTest {

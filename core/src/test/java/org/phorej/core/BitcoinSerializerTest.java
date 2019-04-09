@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
+import org.helixj.params.MainNetParams;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -26,7 +26,7 @@ import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BitcoinSerializerTest {

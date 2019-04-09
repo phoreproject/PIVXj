@@ -20,15 +20,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.phorej</groupId>
-        <artifactId>phorej-parent</artifactId>
+        <groupId>org.helixj</groupId>
+        <artifactId>helixj-parent</artifactId>
         <version>0.14.4-12.1</version>
     </parent>
 
-    <artifactId>phorej-core</artifactId>
+    <artifactId>helixj-core</artifactId>
 
-    <name>phorej</name>
-    <description>A Java Phorej library</description>
+    <name>helixj</name>
+    <description>A Java helixj library</description>
 
     <packaging>jar</packaging>
 

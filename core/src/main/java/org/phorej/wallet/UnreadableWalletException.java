@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 /**
  * Thrown by the {@link WalletProtobufSerializer} when the serialized protocol buffer is either corrupted,

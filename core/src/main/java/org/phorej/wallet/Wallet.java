@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
@@ -24,23 +24,23 @@ import com.google.common.primitives.*;
 import com.google.common.util.concurrent.*;
 import com.google.protobuf.*;
 import net.jcip.annotations.*;
-import org.phorej.core.*;
-import org.phorej.core.Message;
-import org.phorej.core.listeners.*;
-import org.phorej.core.TransactionConfidence.*;
-import org.phorej.crypto.*;
-import org.phorej.script.*;
-import org.phorej.signers.*;
-import org.phorej.utils.*;
-import org.phorej.wallet.Protos.Wallet.*;
-import org.phorej.wallet.WalletTransaction.*;
-import org.phorej.wallet.listeners.KeyChainEventListener;
-import org.phorej.wallet.listeners.ScriptsChangeEventListener;
-import org.phorej.wallet.listeners.WalletChangeEventListener;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.phorej.wallet.listeners.WalletCoinsSentEventListener;
-import org.phorej.wallet.listeners.WalletEventListener;
-import org.phorej.wallet.listeners.WalletReorganizeEventListener;
+import org.helixj.core.*;
+import org.helixj.core.Message;
+import org.helixj.core.listeners.*;
+import org.helixj.core.TransactionConfidence.*;
+import org.helixj.crypto.*;
+import org.helixj.script.*;
+import org.helixj.signers.*;
+import org.helixj.utils.*;
+import org.helixj.wallet.Protos.Wallet.*;
+import org.helixj.wallet.WalletTransaction.*;
+import org.helixj.wallet.listeners.KeyChainEventListener;
+import org.helixj.wallet.listeners.ScriptsChangeEventListener;
+import org.helixj.wallet.listeners.WalletChangeEventListener;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.wallet.listeners.WalletCoinsSentEventListener;
+import org.helixj.wallet.listeners.WalletEventListener;
+import org.helixj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.*;
 import org.spongycastle.crypto.params.*;
 
@@ -91,7 +91,7 @@ import static java.lang.Math.max;
  * auto-save feature that simplifies this for you although you're still responsible for manually triggering a save when
  * your app is about to quit because the auto-save feature waits a moment before actually committing to disk to avoid IO
  * thrashing when the wallet is changing very fast (eg due to a block chain sync). See
- * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.phorej.wallet.WalletFiles.Listener)}
+ * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.helixj.wallet.WalletFiles.Listener)}
  * for more information about this.</p>
  */
 public class Wallet extends BaseTaggableObject
@@ -394,7 +394,7 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key that hasn't been seen in a transaction yet, and which is suitable for displaying in a wallet
      * user interface as "a convenient key to receive funds on" when the purpose parameter is
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS}. The returned key is stable until
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS}. The returned key is stable until
      * it's actually seen in a pending or confirmed transaction, at which point this method will start returning
      * a different key (for each purpose independently).
      */
@@ -409,15 +409,15 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #currentKey(org.phorej.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #currentKey(org.helixj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public DeterministicKey currentReceiveKey() {
         return currentKey(KeyChain.KeyPurpose.RECEIVE_FUNDS);
     }
 
     /**
-     * Returns address for a {@link #currentKey(org.phorej.wallet.KeyChain.KeyPurpose)}
+     * Returns address for a {@link #currentKey(org.helixj.wallet.KeyChain.KeyPurpose)}
      */
     public Address currentAddress(KeyChain.KeyPurpose purpose) {
         keyChainGroupLock.lock();
@@ -430,8 +430,8 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #currentAddress(org.phorej.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #currentAddress(org.helixj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public Address currentReceiveAddress() {
         return currentAddress(KeyChain.KeyPurpose.RECEIVE_FUNDS);
@@ -440,8 +440,8 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key that has not been returned by this method before (fresh). You can think of this as being
      * a newly created key, although the notion of "create" is not really valid for a
-     * {@link org.phorej.wallet.DeterministicKeyChain}. When the parameter is
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
+     * {@link org.helixj.wallet.DeterministicKeyChain}. When the parameter is
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
      * into a receive coins wizard type UI. You should use this when the user is definitely going to hand this key out
      * to someone who wishes to send money.
      */
@@ -452,8 +452,8 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key/s that has not been returned by this method before (fresh). You can think of this as being
      * a newly created key/s, although the notion of "create" is not really valid for a
-     * {@link org.phorej.wallet.DeterministicKeyChain}. When the parameter is
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
+     * {@link org.helixj.wallet.DeterministicKeyChain}. When the parameter is
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
      * into a receive coins wizard type UI. You should use this when the user is definitely going to hand this key/s out
      * to someone who wishes to send money.
      */
@@ -473,15 +473,15 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #freshKey(org.phorej.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #freshKey(org.helixj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public DeterministicKey freshReceiveKey() {
         return freshKey(KeyChain.KeyPurpose.RECEIVE_FUNDS);
     }
 
     /**
-     * Returns address for a {@link #freshKey(org.phorej.wallet.KeyChain.KeyPurpose)}
+     * Returns address for a {@link #freshKey(org.helixj.wallet.KeyChain.KeyPurpose)}
      */
     public Address freshAddress(KeyChain.KeyPurpose purpose) {
         Address key;
@@ -496,8 +496,8 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #freshAddress(org.phorej.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.phorej.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #freshAddress(org.helixj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.helixj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public Address freshReceiveAddress() {
         return freshAddress(KeyChain.KeyPurpose.RECEIVE_FUNDS);
@@ -677,7 +677,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Imports the given keys to the wallet.
-     * If {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.phorej.wallet.WalletFiles.Listener)}
+     * If {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.helixj.wallet.WalletFiles.Listener)}
      * has been called, triggers an auto save bypassing the normal coalescing delay and event handlers.
      * Returns the number of keys added, after duplicates are ignored. The onKeyAdded event will be called for each key
      * in the list that was not already present.
@@ -746,7 +746,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.phorej.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
+    /** See {@link org.helixj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
     public void setKeyChainGroupLookaheadSize(int lookaheadSize) {
         keyChainGroupLock.lock();
         try {
@@ -756,7 +756,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.phorej.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
+    /** See {@link org.helixj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
     public int getKeyChainGroupLookaheadSize() {
         keyChainGroupLock.lock();
         try {
@@ -766,7 +766,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.phorej.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
+    /** See {@link org.helixj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
     public void setKeyChainGroupLookaheadThreshold(int num) {
         keyChainGroupLock.lock();
         try {
@@ -777,7 +777,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.phorej.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
+    /** See {@link org.helixj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
     public int getKeyChainGroupLookaheadThreshold() {
         keyChainGroupLock.lock();
         try {
@@ -1051,7 +1051,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Marks all keys used in the transaction output as used in the wallet.
-     * See {@link org.phorej.wallet.DeterministicKeyChain#markKeyAsUsed(DeterministicKey)} for more info on this.
+     * See {@link org.helixj.wallet.DeterministicKeyChain#markKeyAsUsed(DeterministicKey)} for more info on this.
      */
     private void markKeysAsUsed(Transaction tx) {
         keyChainGroupLock.lock();
@@ -1081,7 +1081,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the immutable seed for the current active HD chain.
-     * @throws org.phorej.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
+     * @throws org.helixj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
      */
     public DeterministicSeed getKeyChainSeed() {
         keyChainGroupLock.lock();
@@ -1110,7 +1110,7 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * Convenience wrapper around {@link Wallet#encrypt(org.phorej.crypto.KeyCrypter,
+     * Convenience wrapper around {@link Wallet#encrypt(org.helixj.crypto.KeyCrypter,
      * org.spongycastle.crypto.params.KeyParameter)} which uses the default Scrypt key derivation algorithm and
      * parameters to derive a key from the given password.
      */
@@ -1127,7 +1127,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Encrypt the wallet using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.phorej.crypto.KeyCrypterScrypt}.
+     * {@link org.helixj.crypto.KeyCrypterScrypt}.
      *
      * @param keyCrypter The KeyCrypter that specifies how to encrypt/ decrypt a key
      * @param aesKey AES key to use (normally created using KeyCrypter#deriveKey and cached as it is time consuming to create from a password)
@@ -1427,7 +1427,7 @@ public class Wallet extends BaseTaggableObject
     /**
      * <p>
      * Disables auto-saving, after it had been enabled with
-     * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.phorej.wallet.WalletFiles.Listener)}
+     * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.helixj.wallet.WalletFiles.Listener)}
      * before. This method blocks until finished.
      * </p>
      */
@@ -3358,7 +3358,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the earliest creation time of keys or watched scripts in this wallet, in seconds since the epoch, ie the min
-     * of {@link org.phorej.core.ECKey#getCreationTimeSeconds()}. This can return zero if at least one key does
+     * of {@link org.helixj.core.ECKey#getCreationTimeSeconds()}. This can return zero if at least one key does
      * not have that data (was created before key timestamping was implemented). <p>
      *
      * This method is most often used in conjunction with {@link PeerGroup#setFastCatchupTimeSecs(long)} in order to
@@ -3615,7 +3615,7 @@ public class Wallet extends BaseTaggableObject
      * money to fail! Finally please be aware that any listeners on the future will run either on the calling thread
      * if it completes immediately, or eventually on a background thread if the balance is not yet at the right
      * level. If you do something that means you know the balance should be sufficient to trigger the future,
-     * you can use {@link org.phorej.utils.Threading#waitForUserCode()} to block until the future had a
+     * you can use {@link org.helixj.utils.Threading#waitForUserCode()} to block until the future had a
      * chance to be updated.</p>
      */
     public ListenableFuture<Coin> getBalanceFuture(final Coin value, final BalanceType type) {
@@ -3767,7 +3767,7 @@ public class Wallet extends BaseTaggableObject
          */
         USE_DUMMY_SIG,
         /**
-         * If signature is missing, {@link org.phorej.signers.TransactionSigner.MissingSignatureException}
+         * If signature is missing, {@link org.helixj.signers.TransactionSigner.MissingSignatureException}
          * will be thrown for P2SH and {@link ECKey.MissingPrivateKeyException} for other tx types.
          */
         THROW
@@ -5129,7 +5129,7 @@ public class Wallet extends BaseTaggableObject
      * re-organisation of the wallet contents on the block chain. For instance, in future the wallet may choose to
      * optimise itself to reduce fees or improve privacy.</p>
      */
-    public void setTransactionBroadcaster(@Nullable org.phorej.core.TransactionBroadcaster broadcaster) {
+    public void setTransactionBroadcaster(@Nullable org.helixj.core.TransactionBroadcaster broadcaster) {
         Transaction[] toBroadcast = {};
         lock.lock();
         try {
@@ -5231,7 +5231,7 @@ public class Wallet extends BaseTaggableObject
      * @param aesKey the users password, if any.
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.phorej.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.helixj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(@Nullable KeyParameter aesKey, boolean signAndSend) throws DeterministicUpgradeRequiresPassword {
         List<Transaction> txns;

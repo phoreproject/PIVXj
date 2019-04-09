@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.helixj.net.discovery;
 
 import com.google.common.annotations.*;
 import com.google.protobuf.*;
 import com.squareup.okhttp.*;
 import org.bitcoin.crawler.*;
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

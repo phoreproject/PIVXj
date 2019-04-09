@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.Script;
-import org.phorej.wallet.WalletTransaction;
+import org.helixj.script.Script;
+import org.helixj.wallet.WalletTransaction;
 
 import java.util.Map;
 
 /**
- * This interface is used to abstract the {@link org.phorej.wallet.Wallet} and the {@link org.phorej.core.Transaction}
+ * This interface is used to abstract the {@link org.helixj.wallet.Wallet} and the {@link org.helixj.core.Transaction}
  */
 public interface TransactionBag {
     /** Returns true if this wallet contains a public key which hashes to the given hash. */

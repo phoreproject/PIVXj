@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.wallet.Wallet;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.wallet.Wallet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +42,8 @@ public class BlockChain extends AbstractBlockChain {
      * one from scratch, or you can deserialize a saved wallet from disk using
      * {@link Wallet#loadFromFile(java.io.File, WalletExtension...)}</p>
      *
-     * <p>For the store, you should use {@link org.phorej.store.SPVBlockStore} or you could also try a
-     * {@link org.phorej.store.MemoryBlockStore} if you want to hold all headers in RAM and don't care about
+     * <p>For the store, you should use {@link org.helixj.store.SPVBlockStore} or you could also try a
+     * {@link org.helixj.store.MemoryBlockStore} if you want to hold all headers in RAM and don't care about
      * disk serialization (this is rare).</p>
      */
     public BlockChain(Context context, Wallet wallet, BlockStore blockStore) throws BlockStoreException {

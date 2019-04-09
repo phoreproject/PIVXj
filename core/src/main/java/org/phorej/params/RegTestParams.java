@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
-import org.phorej.core.Block;
+import org.helixj.core.Block;
 
 import java.math.BigInteger;
 

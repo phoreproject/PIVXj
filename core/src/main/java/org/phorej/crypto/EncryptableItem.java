@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.wallet.Protos;
+import org.helixj.wallet.Protos;
 
 import javax.annotation.Nullable;
 
 /**
  * Provides a uniform way to access something that can be optionally encrypted with a
- * {@link org.phorej.crypto.KeyCrypter}, yielding an {@link org.phorej.crypto.EncryptedData}, and
+ * {@link org.helixj.crypto.KeyCrypter}, yielding an {@link org.helixj.crypto.EncryptedData}, and
  * which can have a creation time associated with it.
  */
 public interface EncryptableItem {

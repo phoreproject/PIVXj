@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 import com.google.common.collect.Lists;
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Utils;
-import org.phorej.crypto.*;
-import org.phorej.script.Script;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.helixj.core.BloomFilter;
+import org.helixj.core.ECKey;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Utils;
+import org.helixj.crypto.*;
+import org.helixj.script.Script;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.ImmutableList;
@@ -50,10 +50,10 @@ import static com.google.common.collect.Lists.newLinkedList;
 /**
  * <p>A deterministic key chain is a {@link KeyChain} that uses the
  * <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP 32 standard</a>, as implemented by
- * {@link org.phorej.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
+ * {@link org.helixj.crypto.DeterministicHierarchy}, to derive all the keys in the keychain from a master seed.
  * This type of wallet is extremely convenient and flexible. Although backing up full wallet files is always a good
  * idea, to recover money only the root seed needs to be preserved and that is a number small enough that it can be
- * written down on paper or, when represented using a BIP 39 {@link org.phorej.crypto.MnemonicCode},
+ * written down on paper or, when represented using a BIP 39 {@link org.helixj.crypto.MnemonicCode},
  * dictated over the phone (possibly even memorized).</p>
  *
  * <p>Deterministic key chains have other advantages: parts of the key tree can be selectively revealed to allow
@@ -63,14 +63,14 @@ import static com.google.common.collect.Lists.newLinkedList;
  * A watching wallet is not instantiated using the public part of the master key as you may imagine. Instead, you
  * need to take the account key (first child of the master key) and provide the public part of that to the watching
  * wallet instead. You can do this by calling {@link #getWatchingKey()} and then serializing it with
- * {@link org.phorej.crypto.DeterministicKey#serializePubB58(org.phorej.core.NetworkParameters)}. The resulting "xpub..." string encodes
+ * {@link org.helixj.crypto.DeterministicKey#serializePubB58(org.helixj.core.NetworkParameters)}. The resulting "xpub..." string encodes
  * sufficient information about the account key to create a watching chain via
- * {@link org.phorej.crypto.DeterministicKey#deserializeB58(org.phorej.crypto.DeterministicKey, String, org.phorej.core.NetworkParameters)}
+ * {@link org.helixj.crypto.DeterministicKey#deserializeB58(org.helixj.crypto.DeterministicKey, String, org.helixj.core.NetworkParameters)}
  * (with null as the first parameter) and then
- * {@link DeterministicKeyChain#DeterministicKeyChain(org.phorej.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
+ * {@link DeterministicKeyChain#DeterministicKeyChain(org.helixj.crypto.DeterministicKey,KeyChainType keyChaintype)}.</p>
  *
- * <p>This class builds on {@link org.phorej.crypto.DeterministicHierarchy} and
- * {@link org.phorej.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
+ * <p>This class builds on {@link org.helixj.crypto.DeterministicHierarchy} and
+ * {@link org.helixj.crypto.DeterministicKey} by adding support for serialization to and from protobufs,
  * and encryption of parts of the key tree. Internally it arranges itself as per the BIP 32 spec, with the seed being
  * used to derive a master key, which is then used to derive an account key, the account key is used to derive two
  * child keys called the <i>internal</i> and <i>external</i> parent keys (for change and handing out addresses respectively)
@@ -698,7 +698,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
      * <p>An alias for <code>getKeyByPath(getAccountPath())</code>.</p>
      *
      * <p>Use this when you would like to create a watching key chain that follows this one, but can't spend money from it.
-     * The returned key can be serialized and then passed into {@link #watch(org.phorej.crypto.DeterministicKey)}
+     * The returned key can be serialized and then passed into {@link #watch(org.helixj.crypto.DeterministicKey)}
      * on another system to watch the hierarchy.</p>
      *
      * <p>Note that the returned key is not pubkey only unless this key chain already is: the returned key can still
@@ -1395,7 +1395,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     /**
      * Whether the keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.phorej.wallet.MarriedKeyChain
+     * @see org.helixj.wallet.MarriedKeyChain
      */
     public boolean isMarried() {
         return false;

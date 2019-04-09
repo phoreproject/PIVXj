@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Utils;
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.crypto.KeyCrypter;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
+import org.helixj.core.BloomFilter;
+import org.helixj.core.ECKey;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Utils;
+import org.helixj.crypto.DeterministicKey;
+import org.helixj.crypto.KeyCrypter;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

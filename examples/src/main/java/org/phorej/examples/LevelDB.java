@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import java.net.InetAddress;
-import org.phorej.core.FullPrunedBlockChain;
-import org.phorej.core.PeerGroup;
-import org.phorej.params.MainNetParams;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.store.LevelDBFullPrunedBlockStore;
+import org.helixj.core.FullPrunedBlockChain;
+import org.helixj.core.PeerGroup;
+import org.helixj.params.MainNetParams;
+import org.helixj.store.FullPrunedBlockStore;
+import org.helixj.store.LevelDBFullPrunedBlockStore;
 
 public class LevelDB {
     public static void main(String[] args) throws Exception {

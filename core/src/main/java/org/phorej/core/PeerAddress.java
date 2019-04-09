@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
+import org.helixj.params.MainNetParams;
 import com.google.common.base.Objects;
 import com.google.common.net.InetAddresses;
 
@@ -28,8 +28,8 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 
-import static org.phorej.core.Utils.uint32ToByteStreamLE;
-import static org.phorej.core.Utils.uint64ToByteStreamLE;
+import static org.helixj.core.Utils.uint32ToByteStreamLE;
+import static org.helixj.core.Utils.uint64ToByteStreamLE;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**

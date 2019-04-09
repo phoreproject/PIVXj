@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.listeners.*;
-import org.phorej.core.*;
+import org.helixj.core.listeners.*;
+import org.helixj.core.*;
 
 import javax.annotation.*;
 import java.util.List;

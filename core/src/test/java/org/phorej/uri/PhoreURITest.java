@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.uri;
+package org.helixj.uri;
 
-import org.phorej.core.Address;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
+import org.helixj.core.Address;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
-import org.phorej.core.CoinDefinition;
+import org.helixj.core.CoinDefinition;
 
-import static org.phorej.core.Coin.*;
-import org.phorej.core.NetworkParameters;
+import static org.helixj.core.Coin.*;
+import org.helixj.core.NetworkParameters;
 import static org.junit.Assert.*;
 
 public class PhoreURITest {

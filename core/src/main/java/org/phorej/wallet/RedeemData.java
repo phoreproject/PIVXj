@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.ECKey;
-import org.phorej.script.Script;
+import org.helixj.core.ECKey;
+import org.helixj.script.Script;
 
 import java.util.ArrayList;
 import java.util.Collections;

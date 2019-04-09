@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.*;
-import org.phorej.testing.*;
-import org.phorej.utils.*;
+import org.helixj.params.*;
+import org.helixj.testing.*;
+import org.helixj.utils.*;
 import org.junit.*;
 
 import java.net.*;
 
-import static org.phorej.core.Coin.*;
+import static org.helixj.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class TxConfidenceTableTest {

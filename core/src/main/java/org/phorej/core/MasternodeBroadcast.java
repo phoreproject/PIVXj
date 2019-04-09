@@ -1,7 +1,7 @@
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
 import org.darkcoinj.DarkSendSigner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

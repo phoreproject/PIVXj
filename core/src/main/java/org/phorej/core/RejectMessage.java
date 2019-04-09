@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.Objects;
 import java.io.IOException;

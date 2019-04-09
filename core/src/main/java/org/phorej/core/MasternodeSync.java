@@ -1,7 +1,7 @@
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.utils.ListenerRegistration;
-import org.phorej.utils.Threading;
+import org.helixj.utils.ListenerRegistration;
+import org.helixj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

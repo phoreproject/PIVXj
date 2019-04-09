@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import java.util.List;
 
 public class HDUtilsTest {

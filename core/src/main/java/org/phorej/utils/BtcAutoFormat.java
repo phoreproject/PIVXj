@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import static org.phorej.core.Coin.SMALLEST_UNIT_EXPONENT;
+import static org.helixj.core.Coin.SMALLEST_UNIT_EXPONENT;
 import com.google.common.collect.ImmutableList;
 
 import java.math.BigInteger;
@@ -54,7 +54,7 @@ import java.util.Locale;
  * @see          java.text.NumberFormat
  * @see          java.text.DecimalFormat
  * @see          DecimalFormatSymbols
- * @see          org.phorej.core.Coin
+ * @see          org.helixj.core.Coin
  */
 
 public final class BtcAutoFormat extends BtcFormat {

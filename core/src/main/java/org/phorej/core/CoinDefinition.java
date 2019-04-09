@@ -1,4 +1,4 @@
-package org.phorej.core;
+package org.helixj.core;
 
 import java.math.BigInteger;
 import java.util.Map;
@@ -192,7 +192,8 @@ public class CoinDefinition {
         checkpoints.put(150000, Sha256Hash.wrap("108aac50762723fe319931b12a063ffa08465e707db7f624f3b9d1fa446822b4"));
         checkpoints.put(200000, Sha256Hash.wrap("25d5407abbca5b217bdebe143fbd06427980e46e14e516150d3c58b77e03ea91"));
         checkpoints.put(250000, Sha256Hash.wrap("5733cac18dfbad3a95b9343272bab90670b0df8b7ff7c0353249b9601002f64e"));
-        checkpoints.put(262639, Sha256Hash.wrap("ead6534cc6ff592028f860a9bc17aa4aa0759de6261a534e4c87d2e91890aece"));;
+        checkpoints.put(262639, Sha256Hash.wrap("ead6534cc6ff592028f860a9bc17aa4aa0759de6261a534e4c87d2e91890aece"));
+        checkpoints.put(306705, Sha256Hash.wrap("273d590dd52ff6a352db7e676143da6a17dda6926513e2d3dd25c62bd3e730af"));;
     }
 
     //Unit Test Information

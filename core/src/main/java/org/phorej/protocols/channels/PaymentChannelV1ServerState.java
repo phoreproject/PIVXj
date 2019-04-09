@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
 import com.google.common.collect.*;
-import org.phorej.core.*;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.wallet.SendRequest;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

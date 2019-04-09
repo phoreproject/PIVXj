@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,7 +24,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.phorej.core.Coin;
+import org.helixj.core.Coin;
 
 public class ExchangeRateTest {
 

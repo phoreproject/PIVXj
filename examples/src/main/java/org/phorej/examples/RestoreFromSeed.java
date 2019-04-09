@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.listeners.DownloadProgressTracker;
-import org.phorej.core.*;
-import org.phorej.net.discovery.DnsDiscovery;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.SPVBlockStore;
-import org.phorej.wallet.DeterministicSeed;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.listeners.DownloadProgressTracker;
+import org.helixj.core.*;
+import org.helixj.net.discovery.DnsDiscovery;
+import org.helixj.params.TestNet3Params;
+import org.helixj.store.SPVBlockStore;
+import org.helixj.wallet.DeterministicSeed;
+import org.helixj.wallet.Wallet;
 
 import java.io.File;
 

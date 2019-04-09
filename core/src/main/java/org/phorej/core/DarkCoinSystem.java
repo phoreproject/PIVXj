@@ -1,6 +1,6 @@
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStore;
+import org.helixj.store.BlockStore;
 import org.darkcoinj.DarkSend;
 import org.darkcoinj.InstantSend;
 

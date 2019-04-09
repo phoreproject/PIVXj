@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.helixj.wallet.listeners;
 
-import org.phorej.core.ECKey;
+import org.helixj.core.ECKey;
 
 import java.util.List;
 

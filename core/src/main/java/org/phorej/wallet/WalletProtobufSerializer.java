@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.*;
-import org.phorej.core.TransactionConfidence.ConfidenceType;
-import org.phorej.crypto.KeyCrypter;
-import org.phorej.crypto.KeyCrypterScrypt;
-import org.phorej.script.Script;
-import org.phorej.signers.LocalTransactionSigner;
-import org.phorej.signers.TransactionSigner;
-import org.phorej.utils.ExchangeRate;
-import org.phorej.utils.Fiat;
-import org.phorej.wallet.Protos.Wallet.EncryptionType;
+import org.helixj.core.*;
+import org.helixj.core.TransactionConfidence.ConfidenceType;
+import org.helixj.crypto.KeyCrypter;
+import org.helixj.crypto.KeyCrypterScrypt;
+import org.helixj.script.Script;
+import org.helixj.signers.LocalTransactionSigner;
+import org.helixj.signers.TransactionSigner;
+import org.helixj.utils.ExchangeRate;
+import org.helixj.utils.Fiat;
+import org.helixj.wallet.Protos.Wallet.EncryptionType;
 
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
@@ -679,7 +679,7 @@ public class WalletProtobufSerializer {
     }
 
     private WalletTransaction connectTransactionOutputs(final NetworkParameters params,
-                                                        final org.phorej.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
+                                                        final org.helixj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
         Transaction tx = txMap.get(txProto.getHash());
         final WalletTransaction.Pool pool;
         switch (txProto.getPool()) {

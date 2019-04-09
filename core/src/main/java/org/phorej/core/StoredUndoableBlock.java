@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import java.util.List;
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.helixj.wallet.listeners;
 
-import org.phorej.wallet.Wallet;
+import org.helixj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the wallet is reorganized.</p>

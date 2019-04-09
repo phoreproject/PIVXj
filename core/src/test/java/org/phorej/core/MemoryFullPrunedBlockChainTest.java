@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.store.MemoryFullPrunedBlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.FullPrunedBlockStore;
+import org.helixj.store.MemoryFullPrunedBlockStore;
 
 /**
  * A MemoryStore implementation of the FullPrunedBlockStoreTest

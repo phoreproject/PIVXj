@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
 import org.junit.Test;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertTrue;

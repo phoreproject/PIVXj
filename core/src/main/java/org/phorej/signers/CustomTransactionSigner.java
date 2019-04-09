@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.signers;
+package org.helixj.signers;
 
-import org.phorej.core.*;
-import org.phorej.crypto.ChildNumber;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.RedeemData;
+import org.helixj.core.*;
+import org.helixj.crypto.ChildNumber;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.Script;
+import org.helixj.wallet.KeyBag;
+import org.helixj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +32,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * <p>This signer may be used as a template for creating custom multisig transaction signers.</p>
  * <p>
- * Concrete implementations have to implement {@link #getSignature(org.phorej.core.Sha256Hash, java.util.List)}
+ * Concrete implementations have to implement {@link #getSignature(org.helixj.core.Sha256Hash, java.util.List)}
  * method returning a signature and a public key of the keypair used to created that signature.
  * It's up to custom implementation where to locate signatures: it may be a network connection,
  * some local API or something else.

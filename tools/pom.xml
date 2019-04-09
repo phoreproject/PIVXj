@@ -19,15 +19,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-      <groupId>org.phorej</groupId>
-      <artifactId>phorej-parent</artifactId>
+      <groupId>org.helixj</groupId>
+      <artifactId>helixj-parent</artifactId>
       <version>0.14.3-12.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>phorej-tools</artifactId>
+  <artifactId>helixj-tools</artifactId>
 
-  <name>phorej Tools</name>
+  <name>helixj Tools</name>
   <description>A collection of useful tools that use the phorem library to perform wallet operations</description>
 
   <build>
@@ -63,7 +63,7 @@
                       <configuration>
                           <transformers>
                               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                  <mainClass>org.phorej.tools.WalletTool</mainClass>
+                                  <mainClass>org.helixj.tools.WalletTool</mainClass>
                               </transformer>
                           </transformers>
                           <outputFile>target/wallet-tool.jar</outputFile>
@@ -78,7 +78,7 @@
                       <configuration>
                           <transformers>
                               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                  <mainClass>org.phorej.tools.BuildCheckpoints</mainClass>
+                                  <mainClass>org.helixj.tools.BuildCheckpoints</mainClass>
                               </transformer>
                           </transformers>
                           <outputFile>target/build-checkpoints.jar</outputFile>
@@ -92,8 +92,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.phorej</groupId>
-      <artifactId>phorej-core</artifactId>
+      <groupId>org.helixj</groupId>
+      <artifactId>helixj-core</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>

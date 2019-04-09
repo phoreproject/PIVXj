@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
 import com.google.common.base.*;
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.slf4j.*;
 
 import java.util.concurrent.*;
 
 /**
- * A {@link java.util.concurrent.ThreadFactory} that propagates a {@link org.phorej.core.Context} from the creating
+ * A {@link java.util.concurrent.ThreadFactory} that propagates a {@link org.helixj.core.Context} from the creating
  * thread into the new thread. This factory creates daemon threads.
  */
 public class ContextPropagatingThreadFactory implements ThreadFactory {

@@ -12,9 +12,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Transaction;
+import org.helixj.core.Transaction;
 
 /**
  * This coin selector will select any transaction at all, regardless of where it came from or whether it was

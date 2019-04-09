@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 /**
  * <p>The verack message, sent by a client accepting the version message they

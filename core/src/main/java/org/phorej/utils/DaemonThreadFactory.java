@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.helixj.tools;
 
-import org.phorej.core.*;
-import org.phorej.core.listeners.PeerConnectedEventListener;
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.core.listeners.PeerConnectedEventListener;
+import org.helixj.core.listeners.PeerDisconnectedEventListener;
+import org.helixj.kits.WalletAppKit;
+import org.helixj.params.MainNetParams;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.SendRequest;
+import org.helixj.wallet.Wallet;
 
 import java.io.File;
 

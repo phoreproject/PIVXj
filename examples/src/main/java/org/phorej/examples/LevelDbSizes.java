@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import static org.fusesource.leveldbjni.JniDBFactory.*;
 

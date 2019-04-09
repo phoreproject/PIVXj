@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
 import com.google.common.collect.Lists;
-import org.phorej.core.*;
-import org.phorej.script.Script;
+import org.helixj.core.*;
+import org.helixj.script.Script;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -554,7 +554,7 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     }
 
     /**
-     * Create a new store for the given {@link org.phorej.core.NetworkParameters}.
+     * Create a new store for the given {@link org.helixj.core.NetworkParameters}.
      * @param params The network.
      * @throws BlockStoreException If the store couldn't be created.
      */
@@ -1119,10 +1119,10 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     /**
      * Calculate the balance for a coinbase, to-address, or p2sh address.
      *
-     * <p>The balance {@link org.phorej.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.helixj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the balance (summed) as an number, then use calculateClientSide=false</p>
      *
-     * <p>The balance {@link org.phorej.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.helixj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the all the openoutputs as stored in the DB (binary), then use calculateClientSide=true</p>
      *
      * @param address The address to calculate the balance of

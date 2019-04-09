@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,8 +28,8 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.phorej.core.Transaction.MAX_STANDARD_TX_SIZE;
-import static org.phorej.core.Utils.*;
+import static org.helixj.core.Transaction.MAX_STANDARD_TX_SIZE;
+import static org.helixj.core.Utils.*;
 
 /**
  * <p>Methods to serialize and de-serialize messages to the Bitcoin network format as defined in

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import static org.phorej.utils.Fiat.parseFiat;
+import static org.helixj.utils.Fiat.parseFiat;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
 import java.io.IOException;
 

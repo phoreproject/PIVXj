@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.Block;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.ProtocolException;
-import org.phorej.core.Utils;
+import org.helixj.core.Block;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.ProtocolException;
+import org.helixj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

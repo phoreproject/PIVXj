@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.UnitTestParams;
+import org.helixj.params.UnitTestParams;
 import org.junit.Test;
 
 public class MessageTest {

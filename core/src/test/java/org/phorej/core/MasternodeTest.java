@@ -1,6 +1,6 @@
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
+import org.helixj.params.MainNetParams;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 /**

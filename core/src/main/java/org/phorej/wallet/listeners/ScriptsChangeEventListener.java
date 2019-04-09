@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet.listeners;
+package org.helixj.wallet.listeners;
 
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
+import org.helixj.script.Script;
+import org.helixj.wallet.Wallet;
 
 import java.util.List;
 

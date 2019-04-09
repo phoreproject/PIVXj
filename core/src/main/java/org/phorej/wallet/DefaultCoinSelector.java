@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.core.TransactionOutput;
+import org.helixj.core.Coin;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Transaction;
+import org.helixj.core.TransactionConfidence;
+import org.helixj.core.TransactionOutput;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.math.BigInteger;

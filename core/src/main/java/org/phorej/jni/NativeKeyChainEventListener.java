@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.ECKey;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.helixj.core.ECKey;
+import org.helixj.wallet.listeners.KeyChainEventListener;
 
 import java.util.List;
 

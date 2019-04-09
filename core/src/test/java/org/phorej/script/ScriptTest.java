@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.phorej.script;
+package org.helixj.script;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.phorej.core.*;
-import org.phorej.core.Transaction.SigHash;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.script.Script.VerifyFlag;
+import org.helixj.core.*;
+import org.helixj.core.Transaction.SigHash;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
+import org.helixj.script.Script.VerifyFlag;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -41,9 +41,9 @@ import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.util.*;
 
-import static org.phorej.core.Utils.HEX;
-import static org.phorej.script.ScriptOpCodes.OP_0;
-import static org.phorej.script.ScriptOpCodes.OP_INVALIDOPCODE;
+import static org.helixj.core.Utils.HEX;
+import static org.helixj.script.ScriptOpCodes.OP_0;
+import static org.helixj.script.ScriptOpCodes.OP_INVALIDOPCODE;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
 import org.junit.Before;

@@ -12,12 +12,12 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.Coin;
-import org.phorej.core.Sha256Hash;
-import org.phorej.core.TransactionBroadcaster;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.Coin;
+import org.helixj.core.Sha256Hash;
+import org.helixj.core.TransactionBroadcaster;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.base.Objects;
 import com.google.common.util.concurrent.Futures;

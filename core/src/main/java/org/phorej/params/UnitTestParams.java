@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 import java.math.BigInteger;
 
 /**
  * Network parameters used by the pivxj unit tests (and potentially your own). This lets you solve a block using
- * {@link org.phorej.core.Block#solve()} by setting difficulty to the easiest possible.
+ * {@link org.helixj.core.Block#solve()} by setting difficulty to the easiest possible.
  */
 public class UnitTestParams extends AbstractBitcoinNetParams {
     public static final int UNITNET_MAJORITY_WINDOW = 8;

@@ -16,4 +16,4 @@
  * High level wrapper APIs around the pivxj building blocks. WalletAppKit is suitable for many different types of
  * apps that require an SPV wallet.
  */
-package org.phorej.kits;
+package org.helixj.kits;

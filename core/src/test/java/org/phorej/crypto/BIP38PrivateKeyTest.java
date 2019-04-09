@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.ECKey;
-import org.phorej.crypto.BIP38PrivateKey.BadPassphraseException;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
+import org.helixj.core.ECKey;
+import org.helixj.crypto.BIP38PrivateKey.BadPassphraseException;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.core.Sha256Hash;
-import org.phorej.crypto.ChildNumber;
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.signers.CustomTransactionSigner;
-import org.phorej.wallet.DeterministicKeyChain;
+import org.helixj.core.Sha256Hash;
+import org.helixj.crypto.ChildNumber;
+import org.helixj.crypto.DeterministicKey;
+import org.helixj.signers.CustomTransactionSigner;
+import org.helixj.wallet.DeterministicKeyChain;
 import com.google.common.collect.ImmutableList;
 
 import java.util.List;

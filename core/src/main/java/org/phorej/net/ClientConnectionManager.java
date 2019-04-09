@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.Service;

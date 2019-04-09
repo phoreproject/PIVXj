@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.RegTestParams;
-import org.phorej.params.TestNet3Params;
+import org.helixj.core.NetworkParameters;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.RegTestParams;
+import org.helixj.params.TestNet3Params;
 
 public enum NetworkEnum {
     MAIN,

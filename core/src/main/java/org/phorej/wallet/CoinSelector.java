@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.TransactionOutput;
+import org.helixj.core.Coin;
+import org.helixj.core.TransactionOutput;
 
 import java.util.List;
 

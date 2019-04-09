@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 // TODO: Rename PrunedException to something like RequiredDataWasPrunedException
 

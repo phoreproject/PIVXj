@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.ECKey.ECDSASignature;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionConfidence;
-import org.phorej.core.TransactionInput;
-import org.phorej.core.TransactionOutput;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.ScriptChunk;
+import org.helixj.core.Coin;
+import org.helixj.core.ECKey;
+import org.helixj.core.ECKey.ECDSASignature;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Transaction;
+import org.helixj.core.TransactionConfidence;
+import org.helixj.core.TransactionInput;
+import org.helixj.core.TransactionOutput;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.ScriptChunk;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -114,7 +114,7 @@ public class DefaultRiskAnalysis implements RiskAnalysis {
 
     /**
      * The reason a transaction is considered non-standard, returned by
-     * {@link #isStandard(org.phorej.core.Transaction)}.
+     * {@link #isStandard(org.helixj.core.Transaction)}.
      */
     public enum RuleViolation {
         NONE,

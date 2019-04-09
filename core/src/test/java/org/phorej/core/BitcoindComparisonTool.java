@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.phorej.core.listeners.*;
-import org.phorej.net.*;
-import org.phorej.params.*;
-import org.phorej.store.*;
-import org.phorej.utils.*;
+import org.helixj.core.listeners.*;
+import org.helixj.net.*;
+import org.helixj.params.*;
+import org.helixj.store.*;
+import org.helixj.utils.*;
 import org.slf4j.*;
 
 import java.io.*;

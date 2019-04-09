@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;
 
 import java.security.cert.X509Certificate;
 import java.util.List;

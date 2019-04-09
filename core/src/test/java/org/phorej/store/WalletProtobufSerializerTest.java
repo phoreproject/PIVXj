@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.*;
-import org.phorej.core.Transaction.Purpose;
-import org.phorej.core.TransactionConfidence.ConfidenceType;
-import org.phorej.crypto.DeterministicKey;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.UnitTestParams;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.testing.FakeTxBuilder;
-import org.phorej.testing.FooWalletExtension;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.DeterministicKeyChain;
-import org.phorej.wallet.KeyChain;
+import org.helixj.core.*;
+import org.helixj.core.Transaction.Purpose;
+import org.helixj.core.TransactionConfidence.ConfidenceType;
+import org.helixj.crypto.DeterministicKey;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.UnitTestParams;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.testing.FakeTxBuilder;
+import org.helixj.testing.FooWalletExtension;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.DeterministicKeyChain;
+import org.helixj.wallet.KeyChain;
 import com.google.protobuf.ByteString;
 
-import org.phorej.wallet.MarriedKeyChain;
-import org.phorej.wallet.Protos;
-import org.phorej.wallet.UnreadableWalletException;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
-import org.phorej.wallet.WalletProtobufSerializer;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.wallet.MarriedKeyChain;
+import org.helixj.wallet.Protos;
+import org.helixj.wallet.UnreadableWalletException;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletExtension;
+import org.helixj.wallet.WalletProtobufSerializer;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -52,8 +52,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.testing.FakeTxBuilder.createFakeTx;
+import static org.helixj.core.Coin.*;
+import static org.helixj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 

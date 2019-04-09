@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.*;
-import org.phorej.params.*;
-import org.phorej.testing.*;
+import org.helixj.core.*;
+import org.helixj.params.*;
+import org.helixj.testing.*;
 import org.junit.*;
 
 import java.net.*;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.*;
-import static org.phorej.core.Coin.*;
+import static org.helixj.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class DefaultCoinSelectorTest extends TestWithWallet {

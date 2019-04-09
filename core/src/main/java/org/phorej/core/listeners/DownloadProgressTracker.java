@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.Block;
-import org.phorej.core.FilteredBlock;
-import org.phorej.core.Peer;
-import org.phorej.core.Utils;
+import org.helixj.core.Block;
+import org.helixj.core.FilteredBlock;
+import org.helixj.core.Peer;
+import org.helixj.core.Utils;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import org.slf4j.Logger;

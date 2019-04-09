@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.collect.*;
-import org.phorej.core.listeners.*;
-import org.phorej.params.TestNet3Params;
-import org.phorej.testing.FakeTxBuilder;
-import org.phorej.testing.InboundMessageQueuer;
-import org.phorej.testing.TestWithNetworkConnections;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.core.listeners.*;
+import org.helixj.params.TestNet3Params;
+import org.helixj.testing.FakeTxBuilder;
+import org.helixj.testing.InboundMessageQueuer;
+import org.helixj.testing.TestWithNetworkConnections;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -52,8 +52,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.testing.FakeTxBuilder.*;
+import static org.helixj.core.Coin.*;
+import static org.helixj.testing.FakeTxBuilder.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

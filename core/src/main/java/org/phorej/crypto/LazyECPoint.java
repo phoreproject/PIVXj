@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
 import org.spongycastle.math.ec.ECCurve;
 import org.spongycastle.math.ec.ECFieldElement;

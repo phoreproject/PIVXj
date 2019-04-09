@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.*;
+import org.helixj.script.*;
 import com.google.common.base.Objects;
 
 import java.io.*;

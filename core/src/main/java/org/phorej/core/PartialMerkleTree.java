@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.phorej.core.Utils.*;
+import static org.helixj.core.Utils.*;
 import com.google.common.base.Objects;
 
 /**

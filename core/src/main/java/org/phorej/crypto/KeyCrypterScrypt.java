@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
 import com.google.common.base.Objects;
 import com.google.protobuf.ByteString;
 import com.lambdaworks.crypto.SCrypt;
-import org.phorej.core.Utils;
-import org.phorej.wallet.Protos;
-import org.phorej.wallet.Protos.ScryptParameters;
-import org.phorej.wallet.Protos.Wallet.EncryptionType;
+import org.helixj.core.Utils;
+import org.helixj.wallet.Protos;
+import org.helixj.wallet.Protos.ScryptParameters;
+import org.helixj.wallet.Protos.Wallet.EncryptionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.BufferedBlockCipher;

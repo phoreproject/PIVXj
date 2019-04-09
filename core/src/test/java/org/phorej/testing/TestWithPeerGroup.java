@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;
-import org.phorej.core.*;
-import org.phorej.net.*;
-import org.phorej.store.*;
-import org.phorej.utils.*;
+import org.helixj.core.*;
+import org.helixj.net.*;
+import org.helixj.store.*;
+import org.helixj.utils.*;
 
 import java.net.*;
 import java.util.concurrent.*;

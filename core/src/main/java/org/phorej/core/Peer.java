@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Throwables;
-import org.phorej.core.listeners.*;
-import org.phorej.net.StreamConnection;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.utils.ListenerRegistration;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.listeners.*;
+import org.helixj.net.StreamConnection;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.utils.ListenerRegistration;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.FutureCallback;
@@ -53,8 +53,8 @@ import static com.google.common.base.Preconditions.checkState;
  * handles low-level message (de)serialization.</p>
  *
  * <p>Note that timeouts are handled by the extended
- * {@link org.phorej.net.AbstractTimeoutHandler} and timeout is automatically disabled (using
- * {@link org.phorej.net.AbstractTimeoutHandler#setTimeoutEnabled(boolean)}) once the version
+ * {@link org.helixj.net.AbstractTimeoutHandler} and timeout is automatically disabled (using
+ * {@link org.helixj.net.AbstractTimeoutHandler#setTimeoutEnabled(boolean)}) once the version
  * handshake completes.</p>
  */
 public class Peer extends PeerSocketHandler {
@@ -181,9 +181,9 @@ public class Peer extends PeerSocketHandler {
      *
      * <p>Note that this does <b>NOT</b> make a connection to the given remoteAddress, it only creates a handler for a
      * connection. If you want to create a one-off connection, create a Peer and pass it to
-     * {@link org.phorej.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
+     * {@link org.helixj.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
      * or
-     * {@link org.phorej.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
+     * {@link org.helixj.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
      *
      * <p>The remoteAddress provided should match the remote address of the peer which is being connected to, and is
      * used to keep track of which peers relayed transactions and offer more descriptive logging.</p>
@@ -193,15 +193,15 @@ public class Peer extends PeerSocketHandler {
     }
 
     /**
-     * <p>Construct a peer that reads/writes from the given block chain. Transactions stored in a {@link org.phorej.core.TxConfidenceTable}
+     * <p>Construct a peer that reads/writes from the given block chain. Transactions stored in a {@link org.helixj.core.TxConfidenceTable}
      * will have their confidence levels updated when a peer announces it, to reflect the greater likelyhood that
      * the transaction is valid.</p>
      *
      * <p>Note that this does <b>NOT</b> make a connection to the given remoteAddress, it only creates a handler for a
      * connection. If you want to create a one-off connection, create a Peer and pass it to
-     * {@link org.phorej.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
+     * {@link org.helixj.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
      * or
-     * {@link org.phorej.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
+     * {@link org.helixj.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
      *
      * <p>The remoteAddress provided should match the remote address of the peer which is being connected to, and is
      * used to keep track of which peers relayed transactions and offer more descriptive logging.</p>
@@ -212,15 +212,15 @@ public class Peer extends PeerSocketHandler {
     }
 
     /**
-     * <p>Construct a peer that reads/writes from the given block chain. Transactions stored in a {@link org.phorej.core.TxConfidenceTable}
+     * <p>Construct a peer that reads/writes from the given block chain. Transactions stored in a {@link org.helixj.core.TxConfidenceTable}
      * will have their confidence levels updated when a peer announces it, to reflect the greater likelyhood that
      * the transaction is valid.</p>
      *
      * <p>Note that this does <b>NOT</b> make a connection to the given remoteAddress, it only creates a handler for a
      * connection. If you want to create a one-off connection, create a Peer and pass it to
-     * {@link org.phorej.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
+     * {@link org.helixj.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
      * or
-     * {@link org.phorej.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
+     * {@link org.helixj.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
      *
      * <p>The remoteAddress provided should match the remote address of the peer which is being connected to, and is
      * used to keep track of which peers relayed transactions and offer more descriptive logging.</p>
@@ -256,9 +256,9 @@ public class Peer extends PeerSocketHandler {
      *
      * <p>Note that this does <b>NOT</b> make a connection to the given remoteAddress, it only creates a handler for a
      * connection. If you want to create a one-off connection, create a Peer and pass it to
-     * {@link org.phorej.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
+     * {@link org.helixj.net.NioClientManager#openConnection(java.net.SocketAddress, StreamConnection)}
      * or
-     * {@link org.phorej.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
+     * {@link org.helixj.net.NioClient#NioClient(java.net.SocketAddress, StreamConnection, int)}.</p>
      *
      * <p>The remoteAddress provided should match the remote address of the peer which is being connected to, and is
      * used to keep track of which peers relayed transactions and offer more descriptive logging.</p>
@@ -1832,7 +1832,7 @@ public class Peer extends PeerSocketHandler {
     /**
      * Sends the peer a ping message and returns a future that will be invoked when the pong is received back.
      * The future provides a number which is the number of milliseconds elapsed between the ping and the pong.
-     * Once the pong is received the value returned by {@link org.phorej.core.Peer#getLastPingTime()} is
+     * Once the pong is received the value returned by {@link org.helixj.core.Peer#getLastPingTime()} is
      * updated.
      * @throws ProtocolException if the peer version is too low to support measurable pings.
      */
@@ -1851,7 +1851,7 @@ public class Peer extends PeerSocketHandler {
     }
 
     /**
-     * Returns the elapsed time of the last ping/pong cycle. If {@link org.phorej.core.Peer#ping()} has never
+     * Returns the elapsed time of the last ping/pong cycle. If {@link org.helixj.core.Peer#ping()} has never
      * been called or we did not hear back the "pong" message yet, returns {@link Long#MAX_VALUE}.
      */
     public long getLastPingTime() {
@@ -1866,7 +1866,7 @@ public class Peer extends PeerSocketHandler {
     }
 
     /**
-     * Returns a moving average of the last N ping/pong cycles. If {@link org.phorej.core.Peer#ping()} has never
+     * Returns a moving average of the last N ping/pong cycles. If {@link org.helixj.core.Peer#ping()} has never
      * been called or we did not hear back the "pong" message yet, returns {@link Long#MAX_VALUE}. The moving average
      * window is 5 buckets.
      */

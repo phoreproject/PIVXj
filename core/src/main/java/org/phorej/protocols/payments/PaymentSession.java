@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.TrustStoreLoader;
-import org.phorej.params.MainNetParams;
-import org.phorej.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.phorej.uri.PhoreURI;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.SendRequest;
+import org.helixj.core.*;
+import org.helixj.crypto.TrustStoreLoader;
+import org.helixj.params.MainNetParams;
+import org.helixj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.helixj.uri.PhoreURI;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.SendRequest;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;

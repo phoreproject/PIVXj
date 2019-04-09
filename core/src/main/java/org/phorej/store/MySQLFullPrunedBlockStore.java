@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.NetworkParameters;
+import org.helixj.core.NetworkParameters;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * <p>A full pruned block store using the MySQL database engine. As an added bonus an address index is calculated,
- * so you can use {@link #calculateBalanceForAddress(org.phorej.core.Address)} to quickly look up
+ * so you can use {@link #calculateBalanceForAddress(org.helixj.core.Address)} to quickly look up
  * the quantity of bitcoins controlled by that address.</p>
  */
 public class MySQLFullPrunedBlockStore extends DatabaseFullPrunedBlockStore {

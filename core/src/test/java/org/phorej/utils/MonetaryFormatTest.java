@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import static org.phorej.core.Coin.CENT;
-import static org.phorej.core.Coin.COIN;
-import static org.phorej.core.Coin.SATOSHI;
-import static org.phorej.core.Coin.ZERO;
+import static org.helixj.core.Coin.CENT;
+import static org.helixj.core.Coin.COIN;
+import static org.helixj.core.Coin.SATOSHI;
+import static org.helixj.core.Coin.ZERO;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Locale;
 
 import org.junit.Test;
 
-import org.phorej.core.Coin;
+import org.helixj.core.Coin;
 
 public class MonetaryFormatTest {
 

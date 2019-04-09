@@ -3,4 +3,4 @@
  * pivxj. Some of these are junit4 classes you can subclass, and others are static utility methods for building
  * fake transactions and so on.
  */
-package org.phorej.testing;
+package org.helixj.testing;

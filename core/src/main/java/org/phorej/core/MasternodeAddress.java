@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.net.InetAddresses;
-import org.phorej.params.MainNetParams;
+import org.helixj.params.MainNetParams;
 
 import java.io.IOException;
 import java.io.OutputStream;

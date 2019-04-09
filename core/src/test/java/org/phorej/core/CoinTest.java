@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.core.NetworkParameters.MAX_MONEY;
+import static org.helixj.core.Coin.*;
+import static org.helixj.core.NetworkParameters.MAX_MONEY;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

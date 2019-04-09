@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
-import org.phorej.core.CoinDefinition;
+import org.helixj.core.CoinDefinition;
 
 
 import static com.google.common.base.Preconditions.checkState;

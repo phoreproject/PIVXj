@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.helixj.core.BloomFilter;
+import org.helixj.core.ECKey;
+import org.helixj.wallet.listeners.KeyChainEventListener;
 
 import java.util.List;
 import java.util.concurrent.Executor;
 
 /**
- * <p>A KeyChain is a class that stores a collection of keys for a {@link org.phorej.wallet.Wallet}. Key chains
+ * <p>A KeyChain is a class that stores a collection of keys for a {@link org.helixj.wallet.Wallet}. Key chains
  * are expected to be able to look up keys given a hash (i.e. address) or pubkey bytes, and provide keys on request
  * for a given purpose. They can inform event listeners about new keys being added.</p>
  *
@@ -88,7 +88,7 @@ public interface KeyChain {
      * <p>This is used to generate a {@link BloomFilter} which can be {@link BloomFilter#merge(BloomFilter)}d with
      * another. It could also be used if you have a specific target for the filter's size.</p>
      *
-     * <p>See the docs for {@link org.phorej.core.BloomFilter#BloomFilter(int, double, long)} for a brief
+     * <p>See the docs for {@link org.helixj.core.BloomFilter#BloomFilter(int, double, long)} for a brief
      * explanation of anonymity when using bloom filters, and for the meaning of these parameters.</p>
      */
     BloomFilter getFilter(int size, double falsePositiveRate, long tweak);

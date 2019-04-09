@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
@@ -26,17 +26,17 @@ import com.google.common.util.concurrent.*;
 import com.squareup.okhttp.*;
 import com.subgraph.orchid.*;
 import net.jcip.annotations.*;
-import org.phorej.core.listeners.*;
-import org.phorej.crypto.*;
-import org.phorej.net.*;
-import org.phorej.net.discovery.*;
-import org.phorej.script.*;
-import org.phorej.utils.*;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.KeyChainEventListener;
-import org.phorej.wallet.listeners.ScriptsChangeEventListener;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.core.listeners.*;
+import org.helixj.crypto.*;
+import org.helixj.net.*;
+import org.helixj.net.discovery.*;
+import org.helixj.script.*;
+import org.helixj.utils.*;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.KeyChainEventListener;
+import org.helixj.wallet.listeners.ScriptsChangeEventListener;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -1433,7 +1433,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns the number of currently connected peers. To be informed when this count changes, register a 
-     * {@link org.phorej.core.listeners.PeerConnectionEventListener} and use the onPeerConnected/onPeerDisconnected methods.
+     * {@link org.helixj.core.listeners.PeerConnectionEventListener} and use the onPeerConnected/onPeerDisconnected methods.
      */
     public int numConnectedPeers() {
         return peers.size();
@@ -1445,7 +1445,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * 
      * @param address destination IP and port.
      * @return The newly created Peer object or null if the peer could not be connected.
-     *         Use {@link org.phorej.core.Peer#getConnectionOpenFuture()} if you
+     *         Use {@link org.helixj.core.Peer#getConnectionOpenFuture()} if you
      *         want a future which completes when the connection is open.
      */
     @Nullable
@@ -2015,7 +2015,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns a future that is triggered when the number of connected peers is equal to the given number of
-     * peers. By using this with {@link org.phorej.core.PeerGroup#getMaxConnections()} you can wait until the
+     * peers. By using this with {@link org.helixj.core.PeerGroup#getMaxConnections()} you can wait until the
      * network is fully online. To block immediately, just call get() on the result. Just calls
      * {@link #waitForPeersOfVersion(int, long)} with zero as the protocol version.
      *
@@ -2121,7 +2121,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * enough, {@link PeerGroup#broadcastTransaction(Transaction)} will wait until the minimum number is reached so
      * propagation across the network can be observed. If no value has been set using
      * {@link PeerGroup#setMinBroadcastConnections(int)} a default of 80% of whatever
-     * {@link org.phorej.core.PeerGroup#getMaxConnections()} returns is used.
+     * {@link org.helixj.core.PeerGroup#getMaxConnections()} returns is used.
      */
     public int getMinBroadcastConnections() {
         lock.lock();
@@ -2140,7 +2140,7 @@ public class PeerGroup implements TransactionBroadcaster {
     }
 
     /**
-     * See {@link org.phorej.core.PeerGroup#getMinBroadcastConnections()}.
+     * See {@link org.helixj.core.PeerGroup#getMinBroadcastConnections()}.
      */
     public void setMinBroadcastConnections(int value) {
         lock.lock();
@@ -2172,7 +2172,7 @@ public class PeerGroup implements TransactionBroadcaster {
     /**
      * <p>Given a transaction, sends it un-announced to one peer and then waits for it to be received back from other
      * peers. Once all connected peers have announced the transaction, the future available via the
-     * {@link org.phorej.core.TransactionBroadcast#future()} method will be completed. If anything goes
+     * {@link org.helixj.core.TransactionBroadcast#future()} method will be completed. If anything goes
      * wrong the exception will be thrown when get() is called, or you can receive it via a callback on the
      * {@link ListenableFuture}. This method returns immediately, so if you want it to block just call get() on the
      * result.</p>
@@ -2184,7 +2184,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * A good choice for proportion would be between 0.5 and 0.8 but if you want faster transmission during initial
      * bringup of the peer group you can lower it.</p>
      *
-     * <p>The returned {@link org.phorej.core.TransactionBroadcast} object can be used to get progress feedback,
+     * <p>The returned {@link org.helixj.core.TransactionBroadcast} object can be used to get progress feedback,
      * which is calculated by watching the transaction propagate across the network and be announced by peers.</p>
      */
     public TransactionBroadcast broadcastTransaction(final Transaction tx, final int minConnections, boolean isSwiftX) {
@@ -2235,7 +2235,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns the period between pings for an individual peer. Setting this lower means more accurate and timely ping
-     * times are available via {@link org.phorej.core.Peer#getLastPingTime()} but it increases load on the
+     * times are available via {@link org.helixj.core.Peer#getLastPingTime()} but it increases load on the
      * remote node. It defaults to 5000.
      */
     public long getPingIntervalMsec() {
@@ -2249,10 +2249,10 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Sets the period between pings for an individual peer. Setting this lower means more accurate and timely ping
-     * times are available via {@link org.phorej.core.Peer#getLastPingTime()} but it increases load on the
+     * times are available via {@link org.helixj.core.Peer#getLastPingTime()} but it increases load on the
      * remote node. It defaults to {@link PeerGroup#DEFAULT_PING_INTERVAL_MSEC}.
      * Setting the value to be <= 0 disables pinging entirely, although you can still request one yourself
-     * using {@link org.phorej.core.Peer#ping()}.
+     * using {@link org.helixj.core.Peer#ping()}.
      */
     public void setPingIntervalMsec(long pingIntervalMsec) {
         lock.lock();

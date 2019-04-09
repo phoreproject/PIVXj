@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import java.io.IOException;
 import java.io.InputStream;

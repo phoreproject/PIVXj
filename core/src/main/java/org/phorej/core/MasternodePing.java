@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStoreException;
+import org.helixj.store.BlockStoreException;
 import org.darkcoinj.DarkSendSigner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ import java.io.OutputStream;
 import java.io.Serializable;
 
 import static com.hashengineering.crypto.X11.x11Digest;
-import static org.phorej.core.Utils.int64ToByteStreamLE;
+import static org.helixj.core.Utils.int64ToByteStreamLE;
 
 public class MasternodePing extends Message implements Serializable {
 

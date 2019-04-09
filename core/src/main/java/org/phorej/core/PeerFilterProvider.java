@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 
 /**
  * An interface which provides the information required to properly filter data downloaded from Peers.
- * Note that an implementer is responsible for calling {@link PeerGroup#recalculateFastCatchupAndFilter(org.phorej.core.PeerGroup.FilterRecalculateMode)}
+ * Note that an implementer is responsible for calling {@link PeerGroup#recalculateFastCatchupAndFilter(org.helixj.core.PeerGroup.FilterRecalculateMode)}
  * whenever a change occurs which effects the data provided via this interface.
  */
 public interface PeerFilterProvider {

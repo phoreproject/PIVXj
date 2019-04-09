@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.X509Utils;
-import org.phorej.script.ScriptBuilder;
+import org.helixj.core.*;
+import org.helixj.crypto.X509Utils;
+import org.helixj.script.ScriptBuilder;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.ImmutableList;

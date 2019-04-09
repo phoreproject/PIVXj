@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.phorej.signers;
+package org.helixj.signers;
 
-import org.phorej.core.Transaction;
-import org.phorej.crypto.ChildNumber;
-import org.phorej.script.Script;
-import org.phorej.wallet.KeyBag;
+import org.helixj.core.Transaction;
+import org.helixj.crypto.ChildNumber;
+import org.helixj.script.Script;
+import org.helixj.wallet.KeyBag;
 
 import java.util.HashMap;
 import java.util.List;
@@ -29,7 +29,7 @@ import java.util.Map;
  * <p>Implementations of this interface are intended to sign inputs of the given transaction. Given transaction may already
  * be partially signed or somehow altered by other signers.</p>
  * <p>To make use of the signer, you need to add it into the  wallet by
- * calling {@link org.phorej.wallet.Wallet#addTransactionSigner(TransactionSigner)}. Signer will be serialized
+ * calling {@link org.helixj.wallet.Wallet#addTransactionSigner(TransactionSigner)}. Signer will be serialized
  * along with the wallet data. In order for a wallet to recreate signer after deserialization, each signer
  * should have no-args constructor</p>
  */

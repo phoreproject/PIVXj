@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.Utils;
+import org.helixj.core.Utils;
 import com.google.common.primitives.Longs;
 
 import static com.google.common.base.Preconditions.checkArgument;

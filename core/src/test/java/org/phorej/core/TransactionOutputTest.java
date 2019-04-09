@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.collect.ImmutableList;
-import org.phorej.params.MainNetParams;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.testing.TestWithWallet;
-import org.phorej.wallet.SendRequest;
+import org.helixj.params.MainNetParams;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.testing.TestWithWallet;
+import org.helixj.wallet.SendRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Before;

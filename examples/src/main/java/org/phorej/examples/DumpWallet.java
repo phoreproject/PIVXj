@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import java.io.File;
 
-import org.phorej.wallet.Wallet;
+import org.helixj.wallet.Wallet;
 
 /**
  * DumpWallet loads a serialized wallet and prints information about what it contains.

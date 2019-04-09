@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Keeps {@link org.phorej.core.StoredBlock}s in memory. Used primarily for unit testing.
+ * Keeps {@link org.helixj.core.StoredBlock}s in memory. Used primarily for unit testing.
  */
 public class MemoryBlockStore implements BlockStore {
     private LinkedHashMap<Sha256Hash, StoredBlock> blockMap = new LinkedHashMap<Sha256Hash, StoredBlock>() {

@@ -12,22 +12,22 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.TestNet3Params;
-import org.phorej.script.Script;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.KeyChainEventListener;
-import org.phorej.wallet.listeners.ScriptsChangeEventListener;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.phorej.wallet.listeners.WalletCoinsSentEventListener;
+import org.helixj.core.*;
+import org.helixj.kits.WalletAppKit;
+import org.helixj.params.TestNet3Params;
+import org.helixj.script.Script;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.KeyChainEventListener;
+import org.helixj.wallet.listeners.ScriptsChangeEventListener;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.wallet.listeners.WalletCoinsSentEventListener;
 
 import java.io.File;
 import java.util.List;
 
-import org.phorej.core.listeners.TransactionConfidenceEventListener;
+import org.helixj.core.listeners.TransactionConfidenceEventListener;
 
 /**
  * The following example shows how to use the by pivxj provided WalletAppKit.

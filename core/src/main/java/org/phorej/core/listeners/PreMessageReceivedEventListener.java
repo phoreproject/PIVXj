@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 /**
  * <p>Implementors can listen to events like blocks being downloaded/transactions being broadcast/connect/disconnects,
@@ -32,7 +32,7 @@ public interface PreMessageReceivedEventListener {
      * callback is passed as "m" to the next, forming a chain.</p>
      *
      * <p>Note that this will never be called if registered with any executor other than
-     * {@link org.phorej.utils.Threading#SAME_THREAD}</p>
+     * {@link org.helixj.utils.Threading#SAME_THREAD}</p>
      */
     Message onPreMessageReceived(Peer peer, Message m);
 }

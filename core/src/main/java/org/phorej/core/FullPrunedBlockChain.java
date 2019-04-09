@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.Script;
-import org.phorej.script.Script.VerifyFlag;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.utils.*;
-import org.phorej.wallet.Wallet;
+import org.helixj.script.Script;
+import org.helixj.script.Script.VerifyFlag;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.FullPrunedBlockStore;
+import org.helixj.utils.*;
+import org.helixj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet2Params;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.testing.FakeTxBuilder;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.Wallet.BalanceType;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet2Params;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.testing.FakeTxBuilder;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.Wallet.BalanceType;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import org.junit.rules.ExpectedException;
@@ -38,9 +38,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.testing.FakeTxBuilder.createFakeBlock;
-import static org.phorej.testing.FakeTxBuilder.createFakeTx;
+import static org.helixj.core.Coin.*;
+import static org.helixj.testing.FakeTxBuilder.createFakeBlock;
+import static org.helixj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

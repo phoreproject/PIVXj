@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.Script;
-import org.phorej.wallet.DefaultRiskAnalysis;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.RedeemData;
+import org.helixj.script.Script;
+import org.helixj.wallet.DefaultRiskAnalysis;
+import org.helixj.wallet.KeyBag;
+import org.helixj.wallet.RedeemData;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;
@@ -301,7 +301,7 @@ public class TransactionInput extends ChildMessage {
 
     /**
      * Alias for getOutpoint().getConnectedRedeemData(keyBag)
-     * @see TransactionOutPoint#getConnectedRedeemData(org.phorej.wallet.KeyBag)
+     * @see TransactionOutPoint#getConnectedRedeemData(org.helixj.wallet.KeyBag)
      */
     @Nullable
     public RedeemData getConnectedRedeemData(KeyBag keyBag) throws ScriptException {

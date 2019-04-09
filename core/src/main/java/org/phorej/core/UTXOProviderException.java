@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 public class UTXOProviderException extends Exception {
     public UTXOProviderException() {

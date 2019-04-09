@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;

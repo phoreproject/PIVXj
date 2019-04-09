@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.base.Objects;
-import org.phorej.script.*;
-import org.phorej.wallet.*;
+import org.helixj.script.*;
+import org.helixj.wallet.*;
 
 import javax.annotation.*;
 import java.io.*;
@@ -130,7 +130,7 @@ public class TransactionOutPoint extends ChildMessage {
 
     /**
      * Returns the ECKey identified in the connected output, for either pay-to-address scripts or pay-to-key scripts.
-     * For P2SH scripts you can use {@link #getConnectedRedeemData(org.phorej.wallet.KeyBag)} and then get the
+     * For P2SH scripts you can use {@link #getConnectedRedeemData(org.helixj.wallet.KeyBag)} and then get the
      * key from RedeemData.
      * If the script form cannot be understood, throws ScriptException.
      *

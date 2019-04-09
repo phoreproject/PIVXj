@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.phorej.net.discovery;
+package org.helixj.net.discovery;
 
-import org.phorej.core.*;
-import org.phorej.utils.*;
+import org.helixj.core.*;
+import org.helixj.utils.*;
 
 import java.net.*;
 import java.util.*;

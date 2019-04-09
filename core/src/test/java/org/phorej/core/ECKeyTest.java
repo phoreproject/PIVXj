@@ -15,25 +15,25 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.core.ECKey.ECDSASignature;
-import org.phorej.crypto.EncryptedData;
-import org.phorej.crypto.KeyCrypter;
-import org.phorej.crypto.KeyCrypterScrypt;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.params.UnitTestParams;
-import org.phorej.utils.BriefLogFormatter;
+import org.helixj.core.ECKey.ECDSASignature;
+import org.helixj.crypto.EncryptedData;
+import org.helixj.crypto.KeyCrypter;
+import org.helixj.crypto.KeyCrypterScrypt;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
+import org.helixj.params.UnitTestParams;
+import org.helixj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.ByteString;
-import org.phorej.wallet.Protos;
-import org.phorej.wallet.Protos.ScryptParameters;
+import org.helixj.wallet.Protos;
+import org.helixj.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -50,8 +50,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
 
-import static org.phorej.core.Utils.HEX;
-import static org.phorej.core.Utils.reverseBytes;
+import static org.helixj.core.Utils.HEX;
+import static org.helixj.core.Utils.reverseBytes;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

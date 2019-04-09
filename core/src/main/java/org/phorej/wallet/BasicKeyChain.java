@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.BloomFilter;
-import org.phorej.core.ECKey;
-import org.phorej.crypto.*;
-import org.phorej.utils.ListenerRegistration;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.listeners.KeyChainEventListener;
+import org.helixj.core.BloomFilter;
+import org.helixj.core.ECKey;
+import org.helixj.crypto.*;
+import org.helixj.utils.ListenerRegistration;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -349,8 +349,8 @@ public class BasicKeyChain implements EncryptableKeyChain {
     /**
      * Returns a new BasicKeyChain that contains all basic, ORIGINAL type keys and also any encrypted keys extracted
      * from the list. Unrecognised key types are ignored.
-     * @throws org.phorej.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
-     * @throws org.phorej.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
+     * @throws org.helixj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
+     * @throws org.helixj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
      */
     public static BasicKeyChain fromProtobufEncrypted(List<Protos.Key> keys, KeyCrypter crypter) throws UnreadableWalletException {
         BasicKeyChain chain = new BasicKeyChain(checkNotNull(crypter));
@@ -434,7 +434,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Convenience wrapper around {@link #toEncrypted(org.phorej.crypto.KeyCrypter,
+     * Convenience wrapper around {@link #toEncrypted(org.helixj.crypto.KeyCrypter,
      * org.spongycastle.crypto.params.KeyParameter)} which uses the default Scrypt key derivation algorithm and
      * parameters, derives a key from the given password and returns the created key.
      */
@@ -449,7 +449,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
 
     /**
      * Encrypt the wallet using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.phorej.crypto.KeyCrypterScrypt}.
+     * {@link org.helixj.crypto.KeyCrypterScrypt}.
      *
      * @param keyCrypter The KeyCrypter that specifies how to encrypt/ decrypt a key
      * @param aesKey AES key to use (normally created using KeyCrypter#deriveKey and cached as it is time consuming

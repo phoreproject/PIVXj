@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
 import javax.annotation.Nonnull;
 import java.io.File;

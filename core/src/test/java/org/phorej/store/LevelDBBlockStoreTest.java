@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.*;
-import org.phorej.params.*;
+import org.helixj.core.*;
+import org.helixj.params.*;
 import org.junit.*;
 
 import java.io.*;

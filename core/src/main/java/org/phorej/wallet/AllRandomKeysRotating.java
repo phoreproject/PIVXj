@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 /**
  * Indicates that an attempt was made to upgrade a random wallet to deterministic, but there were no non-rotating

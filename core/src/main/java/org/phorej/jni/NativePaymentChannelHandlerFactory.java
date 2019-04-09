@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.protocols.channels.PaymentChannelServerListener;
-import org.phorej.protocols.channels.ServerConnectionEventHandler;
+import org.helixj.protocols.channels.PaymentChannelServerListener;
+import org.helixj.protocols.channels.ServerConnectionEventHandler;
 
 import javax.annotation.Nullable;
 import java.net.SocketAddress;

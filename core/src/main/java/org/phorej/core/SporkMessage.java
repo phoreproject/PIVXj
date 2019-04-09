@@ -1,4 +1,4 @@
-package org.phorej.core;
+package org.helixj.core;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

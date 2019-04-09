@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.phorej.core;
+package org.helixj.core;
 
 import org.darkcoinj.DarkSendSigner;
 import org.darkcoinj.InstantSend;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.ECKey;
+import org.helixj.core.ECKey;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import javax.annotation.Nullable;
@@ -28,7 +28,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * A DecryptingKeyBag filters a pre-existing key bag, decrypting keys as they are requested using the provided
- * AES key. If the keys are encrypted and no AES key provided, {@link org.phorej.core.ECKey.KeyIsEncryptedException}
+ * AES key. If the keys are encrypted and no AES key provided, {@link org.helixj.core.ECKey.KeyIsEncryptedException}
  * will be thrown.
  */
 public class DecryptingKeyBag implements KeyBag {

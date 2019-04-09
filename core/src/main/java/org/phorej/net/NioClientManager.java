@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.net;
+package org.helixj.net;
 
 import com.google.common.base.Throwables;
 import com.google.common.util.concurrent.*;
-import org.phorej.utils.*;
+import org.helixj.utils.*;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;

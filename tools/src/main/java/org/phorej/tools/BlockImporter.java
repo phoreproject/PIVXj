@@ -12,18 +12,18 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.helixj.tools;
 
-import org.phorej.core.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.*;
-import org.phorej.utils.BlockFileLoader;
+import org.helixj.core.*;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
+import org.helixj.store.*;
+import org.helixj.utils.BlockFileLoader;
 import com.google.common.base.Preconditions;
 
 import java.io.File;
 
-/** Very thin wrapper around {@link org.phorej.utils.BlockFileLoader} */
+/** Very thin wrapper around {@link org.helixj.utils.BlockFileLoader} */
 public class BlockImporter {
     public static void main(String[] args) throws BlockStoreException, VerificationException, PrunedException {
         System.out.println("USAGE: BlockImporter (prod|test) (H2|Disk|MemFull|Mem|SPV) [blockStore]");

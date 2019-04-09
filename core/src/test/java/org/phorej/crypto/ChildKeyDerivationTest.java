@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.*;
-import org.phorej.params.*;
-import org.phorej.wallet.DeterministicKeyChain;
+import org.helixj.core.*;
+import org.helixj.params.*;
+import org.helixj.wallet.DeterministicKeyChain;
 import org.junit.*;
 import org.spongycastle.crypto.params.*;
 
-import static org.phorej.core.Utils.*;
+import static org.helixj.core.Utils.*;
 import static org.junit.Assert.*;
 
 /**

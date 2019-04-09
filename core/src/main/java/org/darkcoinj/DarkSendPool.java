@@ -1,9 +1,9 @@
 package org.darkcoinj;
 
-import org.phorej.core.*;
-import org.phorej.script.Script;
-import org.phorej.utils.ContextPropagatingThreadFactory;
-import org.phorej.utils.Threading;
+import org.helixj.core.*;
+import org.helixj.script.Script;
+import org.helixj.utils.ContextPropagatingThreadFactory;
+import org.helixj.utils.Threading;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

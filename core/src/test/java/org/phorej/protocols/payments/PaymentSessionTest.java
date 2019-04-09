@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.payments;
+package org.helixj.protocols.payments;
 
-import org.phorej.core.*;
-import org.phorej.crypto.TrustStoreLoader;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.TestNet3Params;
+import org.helixj.core.*;
+import org.helixj.crypto.TrustStoreLoader;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.TestNet3Params;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 import org.bitcoin.protocols.payments.Protos;
@@ -32,7 +32,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static org.phorej.core.Coin.COIN;
+import static org.helixj.core.Coin.COIN;
 import static org.junit.Assert.*;
 
 public class PaymentSessionTest {

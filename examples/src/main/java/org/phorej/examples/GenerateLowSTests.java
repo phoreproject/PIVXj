@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,24 +24,24 @@ import java.util.EnumSet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import org.phorej.core.Coin;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.ScriptException;
-import org.phorej.core.Transaction;
-import org.phorej.core.TransactionInput;
-import org.phorej.core.TransactionOutput;
-import org.phorej.core.Utils;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.params.MainNetParams;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.script.ScriptChunk;
-import static org.phorej.script.ScriptOpCodes.getOpCodeName;
-import org.phorej.signers.LocalTransactionSigner;
-import org.phorej.signers.TransactionSigner.ProposedTransaction;
-import org.phorej.wallet.KeyBag;
-import org.phorej.wallet.RedeemData;
+import org.helixj.core.Coin;
+import org.helixj.core.ECKey;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.ScriptException;
+import org.helixj.core.Transaction;
+import org.helixj.core.TransactionInput;
+import org.helixj.core.TransactionOutput;
+import org.helixj.core.Utils;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.params.MainNetParams;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.script.ScriptChunk;
+import static org.helixj.script.ScriptOpCodes.getOpCodeName;
+import org.helixj.signers.LocalTransactionSigner;
+import org.helixj.signers.TransactionSigner.ProposedTransaction;
+import org.helixj.wallet.KeyBag;
+import org.helixj.wallet.RedeemData;
 
 /**
  * Test case generator for transactions with low-S and high-S signatures, to

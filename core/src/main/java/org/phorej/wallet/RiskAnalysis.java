@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
-import org.phorej.core.Transaction;
+import org.helixj.core.Transaction;
 
 import java.util.List;
 

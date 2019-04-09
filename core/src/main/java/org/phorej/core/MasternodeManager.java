@@ -1,12 +1,12 @@
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.utils.ListenerRegistration;
-import org.phorej.utils.Pair;
-import org.phorej.utils.Threading;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.utils.ListenerRegistration;
+import org.helixj.utils.Pair;
+import org.helixj.utils.Threading;
 import org.darkcoinj.DarkSendSigner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.phorej.core.MasterNodeSystem.MASTERNODE_REMOVAL_SECONDS;
+import static org.helixj.core.MasterNodeSystem.MASTERNODE_REMOVAL_SECONDS;
 
 /**
  * Created by Hash Engineering on 2/20/2016.

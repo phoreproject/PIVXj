@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.utils;
+package org.helixj.utils;
 
-import org.phorej.core.Coin;
-import org.phorej.core.Monetary;
+import org.helixj.core.Coin;
+import org.helixj.core.Monetary;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormatSymbols;
@@ -391,7 +391,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable coin value to a {@link org.phorej.core.Coin} instance.
+     * Parse a human readable coin value to a {@link org.helixj.core.Coin} instance.
      *
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason
@@ -401,7 +401,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable fiat value to a {@link org.phorej.utils.Fiat} instance.
+     * Parse a human readable fiat value to a {@link org.helixj.utils.Fiat} instance.
      *
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason

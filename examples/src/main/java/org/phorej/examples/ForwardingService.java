@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.*;
-import org.phorej.crypto.KeyCrypterException;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.RegTestParams;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.FlatDB;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.core.*;
+import org.helixj.crypto.KeyCrypterException;
+import org.helixj.kits.WalletAppKit;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.RegTestParams;
+import org.helixj.params.TestNet3Params;
+import org.helixj.store.FlatDB;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

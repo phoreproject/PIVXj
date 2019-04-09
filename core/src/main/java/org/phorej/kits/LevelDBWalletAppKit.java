@@ -1,10 +1,10 @@
-package org.phorej.kits;
+package org.helixj.kits;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.LevelDBBlockStore;
-import org.phorej.store.SPVBlockStore;
+import org.helixj.core.NetworkParameters;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.LevelDBBlockStore;
+import org.helixj.store.SPVBlockStore;
 
 import java.io.File;
 

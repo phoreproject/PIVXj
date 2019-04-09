@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.collect.*;
-import org.phorej.core.TransactionConfidence.*;
-import org.phorej.store.*;
-import org.phorej.testing.*;
-import org.phorej.wallet.*;
+import org.helixj.core.TransactionConfidence.*;
+import org.helixj.store.*;
+import org.helixj.testing.*;
+import org.helixj.wallet.*;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -29,7 +29,7 @@ import org.junit.runners.*;
 import java.math.*;
 import java.util.*;
 
-import static org.phorej.core.Utils.*;
+import static org.helixj.core.Utils.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.uri;
+package org.helixj.uri;
 
-import org.phorej.core.*;
-import org.phorej.params.AbstractBitcoinNetParams;
+import org.helixj.core.*;
+import org.helixj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 import java.io.UnsupportedEncodingException;
@@ -77,8 +77,8 @@ public class PhoreURI {
     public static final String FIELD_INSTANTSEND = "is";
 
     /**
-     * URI for Bitcoin network. Use {@link org.phorej.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
-     * need Bitcoin, or use {@link org.phorej.core.NetworkParameters#getUriScheme} to get the scheme
+     * URI for Bitcoin network. Use {@link org.helixj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
+     * need Bitcoin, or use {@link org.helixj.core.NetworkParameters#getUriScheme} to get the scheme
      * from network parameters.
      */
     @Deprecated

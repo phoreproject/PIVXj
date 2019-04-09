@@ -1,4 +1,4 @@
-package org.phorej.store;
+package org.helixj.store;
 
 /**
  * Created by Hash Engineering on 2/26/2016.
@@ -7,7 +7,7 @@ package org.phorej.store;
 /** Access to the MN database (mncache.dat)
  */
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

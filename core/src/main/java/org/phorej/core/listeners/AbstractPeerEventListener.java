@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.Block;
-import org.phorej.core.FilteredBlock;
-import org.phorej.core.GetDataMessage;
-import org.phorej.core.Message;
-import org.phorej.core.PeerAddress;
-import org.phorej.core.Peer;
-import org.phorej.core.Transaction;
+import org.helixj.core.Block;
+import org.helixj.core.FilteredBlock;
+import org.helixj.core.GetDataMessage;
+import org.helixj.core.Message;
+import org.helixj.core.PeerAddress;
+import org.helixj.core.Peer;
+import org.helixj.core.Transaction;
 import javax.annotation.*;
 import java.util.List;
 import java.util.Set;

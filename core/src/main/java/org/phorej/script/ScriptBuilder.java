@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.script;
+package org.helixj.script;
 
 import com.google.common.collect.Lists;
-import org.phorej.core.Address;
-import org.phorej.core.ECKey;
-import org.phorej.core.Utils;
-import org.phorej.crypto.TransactionSignature;
+import org.helixj.core.Address;
+import org.helixj.core.ECKey;
+import org.helixj.core.Utils;
+import org.helixj.crypto.TransactionSignature;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -32,11 +32,11 @@ import java.util.Stack;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
-import static org.phorej.script.ScriptOpCodes.*;
+import static org.helixj.script.ScriptOpCodes.*;
 
 /**
  * <p>Tools for the construction of commonly used script types. You don't normally need this as it's hidden behind
- * convenience methods on {@link org.phorej.core.Transaction}, but they are useful when working with the
+ * convenience methods on {@link org.helixj.core.Transaction}, but they are useful when working with the
  * protocol at a lower level.</p>
  */
 public class ScriptBuilder {

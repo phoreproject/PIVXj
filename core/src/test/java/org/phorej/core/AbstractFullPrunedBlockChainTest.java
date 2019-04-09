@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.collect.Lists;
-import org.phorej.params.MainNetParams;
-import org.phorej.params.UnitTestParams;
-import org.phorej.script.Script;
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.utils.BlockFileLoader;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletTransaction;
+import org.helixj.params.MainNetParams;
+import org.helixj.params.UnitTestParams;
+import org.helixj.script.Script;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.FullPrunedBlockStore;
+import org.helixj.utils.BlockFileLoader;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.wallet.SendRequest;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletTransaction;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -38,7 +38,7 @@ import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.phorej.core.Coin.FIFTY_COINS;
+import static org.helixj.core.Coin.FIFTY_COINS;
 import static org.junit.Assert.*;
 import org.junit.rules.ExpectedException;
 

@@ -1,8 +1,8 @@
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.Address;
-import org.phorej.params.MainNetParams;
-import org.phorej.wallet.DeterministicKeyChain;
+import org.helixj.core.Address;
+import org.helixj.params.MainNetParams;
+import org.helixj.wallet.DeterministicKeyChain;
 import org.junit.Test;
 
 import java.security.SecureRandom;

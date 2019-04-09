@@ -14,10 +14,10 @@
 
 package wallettemplate.utils;
 
-import org.phorej.core.listeners.DownloadProgressTracker;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletChangeEventListener;
-import org.phorej.core.*;
+import org.helixj.core.listeners.DownloadProgressTracker;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletChangeEventListener;
+import org.helixj.core.*;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;

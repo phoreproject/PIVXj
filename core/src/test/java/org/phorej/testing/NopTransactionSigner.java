@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.signers.TransactionSigner;
-import org.phorej.wallet.KeyBag;
+import org.helixj.signers.TransactionSigner;
+import org.helixj.wallet.KeyBag;
 
 public class NopTransactionSigner implements TransactionSigner {
     private boolean isReady;

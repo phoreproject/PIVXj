@@ -12,14 +12,14 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import org.phorej.core.Transaction.SigHash;
-import org.phorej.crypto.TransactionSignature;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
+import org.helixj.core.Transaction.SigHash;
+import org.helixj.crypto.TransactionSignature;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
 import com.google.common.base.Preconditions;
 
 import javax.annotation.Nullable;
@@ -30,8 +30,8 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.script.ScriptOpCodes.*;
+import static org.helixj.core.Coin.*;
+import static org.helixj.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 

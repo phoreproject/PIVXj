@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletChangeEventListener;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletChangeEventListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

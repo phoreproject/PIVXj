@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import org.phorej.core.*;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
+import org.helixj.core.*;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletExtension;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashMultimap;

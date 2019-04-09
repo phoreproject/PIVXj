@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
 import com.google.common.collect.*;
-import org.phorej.core.*;
+import org.helixj.core.*;
 import org.spongycastle.math.ec.*;
 
 import java.math.*;

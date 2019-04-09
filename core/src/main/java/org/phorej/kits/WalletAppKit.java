@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.phorej.kits;
+package org.helixj.kits;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
 import com.subgraph.orchid.*;
-import org.phorej.core.listeners.*;
-import org.phorej.core.*;
-import org.phorej.net.discovery.*;
-import org.phorej.protocols.channels.*;
-import org.phorej.store.*;
-import org.phorej.wallet.*;
+import org.helixj.core.listeners.*;
+import org.helixj.core.*;
+import org.helixj.net.discovery.*;
+import org.helixj.protocols.channels.*;
+import org.helixj.store.*;
+import org.helixj.wallet.*;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -135,7 +135,7 @@ public class WalletAppKit extends AbstractIdleService {
 
     /**
      * If you want to learn about the sync process, you can provide a listener here. For instance, a
-     * {@link org.phorej.core.DownloadProgressTracker} is a good choice. This has no effect unless setBlockingStartup(false) has been called
+     * {@link org.helixj.core.DownloadProgressTracker} is a good choice. This has no effect unless setBlockingStartup(false) has been called
      * too, due to some missing implementation code.
      */
     public WalletAppKit setDownloadListener(DownloadProgressTracker listener) {

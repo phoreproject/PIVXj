@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.phorej.params;
+package org.helixj.params;
 
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
-import org.phorej.core.*;
-import org.phorej.utils.MonetaryFormat;
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.helixj.core.*;
+import org.helixj.utils.MonetaryFormat;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

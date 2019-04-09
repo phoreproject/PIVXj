@@ -12,11 +12,11 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.*;
-import org.phorej.protocols.channels.PaymentChannelCloseException;
-import org.phorej.protocols.channels.ServerConnectionEventHandler;
+import org.helixj.core.*;
+import org.helixj.protocols.channels.PaymentChannelCloseException;
+import org.helixj.protocols.channels.ServerConnectionEventHandler;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 

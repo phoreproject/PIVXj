@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.Address;
-import org.phorej.core.ECKey;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.StoredBlock;
-import org.phorej.params.UnitTestParams;
+import org.helixj.core.Address;
+import org.helixj.core.ECKey;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.StoredBlock;
+import org.helixj.params.UnitTestParams;
 import org.junit.Test;
 
 import java.io.File;

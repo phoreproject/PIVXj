@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.*;
-import org.phorej.params.MainNetParams;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.params.MainNetParams;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
 /**
  * <p>Instances of this class are not safe for use by multiple threads.</p>

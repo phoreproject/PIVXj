@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.core.listeners.TransactionConfidenceEventListener;
-import org.phorej.core.TransactionConfidence.ConfidenceType;
-import org.phorej.params.UnitTestParams;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.testing.FakeTxBuilder;
-import org.phorej.utils.BriefLogFormatter;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletTransaction;
-import org.phorej.wallet.listeners.WalletChangeEventListener;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.phorej.wallet.listeners.WalletReorganizeEventListener;
+import org.helixj.core.listeners.TransactionConfidenceEventListener;
+import org.helixj.core.TransactionConfidence.ConfidenceType;
+import org.helixj.params.UnitTestParams;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.testing.FakeTxBuilder;
+import org.helixj.utils.BriefLogFormatter;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletTransaction;
+import org.helixj.wallet.listeners.WalletChangeEventListener;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.wallet.listeners.WalletReorganizeEventListener;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.phorej.core.Coin.*;
+import static org.helixj.core.Coin.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

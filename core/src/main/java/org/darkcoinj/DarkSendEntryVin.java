@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.TransactionInput;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.

@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.*;
-import org.phorej.params.TestNet3Params;
-import org.phorej.store.BlockStore;
-import org.phorej.store.MemoryBlockStore;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.helixj.core.*;
+import org.helixj.params.TestNet3Params;
+import org.helixj.store.BlockStore;
+import org.helixj.store.MemoryBlockStore;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import java.io.File;
 

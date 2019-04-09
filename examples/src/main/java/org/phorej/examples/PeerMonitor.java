@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
-import org.phorej.core.listeners.PeerConnectedEventListener;
-import org.phorej.core.listeners.PeerDisconnectedEventListener;
-import org.phorej.core.NetworkParameters;
-import org.phorej.core.Peer;
-import org.phorej.core.PeerGroup;
-import org.phorej.net.discovery.DnsDiscovery;
-import org.phorej.params.MainNetParams;
-import org.phorej.utils.BriefLogFormatter;
+import org.helixj.core.listeners.PeerConnectedEventListener;
+import org.helixj.core.listeners.PeerDisconnectedEventListener;
+import org.helixj.core.NetworkParameters;
+import org.helixj.core.Peer;
+import org.helixj.core.PeerGroup;
+import org.helixj.net.discovery.DnsDiscovery;
+import org.helixj.params.MainNetParams;
+import org.helixj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

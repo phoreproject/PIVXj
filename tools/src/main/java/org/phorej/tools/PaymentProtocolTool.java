@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.tools;
+package org.helixj.tools;
 
-import org.phorej.crypto.TrustStoreLoader;
-import org.phorej.protocols.payments.PaymentProtocol;
-import org.phorej.protocols.payments.PaymentProtocolException;
-import org.phorej.protocols.payments.PaymentSession;
-import org.phorej.uri.PhoreURI;
-import org.phorej.uri.BitcoinURIParseException;
+import org.helixj.crypto.TrustStoreLoader;
+import org.helixj.protocols.payments.PaymentProtocol;
+import org.helixj.protocols.payments.PaymentProtocolException;
+import org.helixj.protocols.payments.PaymentSession;
+import org.helixj.uri.PhoreURI;
+import org.helixj.uri.BitcoinURIParseException;
 import org.bitcoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;

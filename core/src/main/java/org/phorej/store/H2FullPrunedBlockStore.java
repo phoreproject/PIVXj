@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.phorej.store;
+package org.helixj.store;
 
-import org.phorej.core.*;
+import org.helixj.core.*;
 
 import java.sql.*;
 import java.util.ArrayList;

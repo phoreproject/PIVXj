@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.crypto.*;
+import org.helixj.crypto.*;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -28,8 +28,8 @@ import com.google.common.primitives.UnsignedBytes;
 import org.bitcoin.NativeSecp256k1;
 import org.bitcoin.NativeSecp256k1Util;
 import org.bitcoin.Secp256k1Context;
-import org.phorej.wallet.Protos;
-import org.phorej.wallet.Wallet;
+import org.helixj.wallet.Protos;
+import org.helixj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.asn1.*;
@@ -420,7 +420,7 @@ public class ECKey implements EncryptableItem {
     /**
      * Output this ECKey as an ASN.1 encoded private key, as understood by OpenSSL or used by Bitcoin Core
      * in its wallet storage format.
-     * @throws org.phorej.core.ECKey.MissingPrivateKeyException if the private key is missing or encrypted.
+     * @throws org.helixj.core.ECKey.MissingPrivateKeyException if the private key is missing or encrypted.
      */
     public byte[] toASN1() {
         try {
@@ -625,7 +625,7 @@ public class ECKey implements EncryptableItem {
 
     /**
      * Signs the given hash and returns the R and S components as BigIntegers. In the Bitcoin protocol, they are
-     * usually encoded using ASN.1 format, so you want {@link org.phorej.core.ECKey.ECDSASignature#toASN1()}
+     * usually encoded using ASN.1 format, so you want {@link org.helixj.core.ECKey.ECDSASignature#toASN1()}
      * instead. However sometimes the independent components can be useful, for instance, if you're going to do
      * further EC maths on them.
      * @throws KeyCrypterException if this ECKey doesn't have a private part.
@@ -644,7 +644,7 @@ public class ECKey implements EncryptableItem {
 
     /**
      * Signs the given hash and returns the R and S components as BigIntegers. In the Bitcoin protocol, they are
-     * usually encoded using DER format, so you want {@link org.phorej.core.ECKey.ECDSASignature#encodeToDER()}
+     * usually encoded using DER format, so you want {@link org.helixj.core.ECKey.ECDSASignature#encodeToDER()}
      * instead. However sometimes the independent components can be useful, for instance, if you're doing to do further
      * EC maths on them.
      *
@@ -1053,7 +1053,7 @@ public class ECKey implements EncryptableItem {
 
     /**
      * Returns a 32 byte array containing the private key.
-     * @throws org.phorej.core.ECKey.MissingPrivateKeyException if the private key bytes are missing/encrypted.
+     * @throws org.helixj.core.ECKey.MissingPrivateKeyException if the private key bytes are missing/encrypted.
      */
     public byte[] getPrivKeyBytes() {
         return Utils.bigIntegerToBytes(getPrivKey(), 32);
@@ -1061,7 +1061,7 @@ public class ECKey implements EncryptableItem {
 
     /**
      * Exports the private key in the form used by Bitcoin Core's "dumpprivkey" and "importprivkey" commands. Use
-     * the {@link org.phorej.core.DumpedPrivateKey#toString()} method to get the string.
+     * the {@link org.helixj.core.DumpedPrivateKey#toString()} method to get the string.
      *
      * @param params The network this key is intended for use on.
      * @return Private key bytes as a {@link DumpedPrivateKey}.

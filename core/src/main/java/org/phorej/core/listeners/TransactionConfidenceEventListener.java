@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.Transaction;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.Transaction;
+import org.helixj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when confidence of a transaction changes.</p>

@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.phorej.crypto;
+package org.helixj.crypto;
 
-import org.phorej.core.ECKey;
-import org.phorej.core.Transaction;
-import org.phorej.core.VerificationException;
-import org.phorej.core.Transaction.SigHash;
+import org.helixj.core.ECKey;
+import org.helixj.core.Transaction;
+import org.helixj.core.VerificationException;
+import org.helixj.core.Transaction.SigHash;
 import com.google.common.base.Preconditions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 
 /**
- * A TransactionSignature wraps an {@link org.phorej.core.ECKey.ECDSASignature} and adds methods for handling
+ * A TransactionSignature wraps an {@link org.helixj.core.ECKey.ECDSASignature} and adds methods for handling
  * the additional SIGHASH mode byte that is used.
  */
 public class TransactionSignature extends ECKey.ECDSASignature {

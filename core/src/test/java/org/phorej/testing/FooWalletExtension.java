@@ -12,10 +12,10 @@
  * limitations under the License.
  */
 
-package org.phorej.testing;
+package org.helixj.testing;
 
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletExtension;
 
 import java.util.Arrays;
 

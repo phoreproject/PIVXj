@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.*;
-import org.phorej.script.Script;
-import org.phorej.script.ScriptBuilder;
-import org.phorej.testing.TestWithWallet;
-import org.phorej.wallet.SendRequest;
-import org.phorej.wallet.Wallet;
+import org.helixj.core.*;
+import org.helixj.script.Script;
+import org.helixj.script.ScriptBuilder;
+import org.helixj.testing.TestWithWallet;
+import org.helixj.wallet.SendRequest;
+import org.helixj.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -40,9 +40,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.testing.FakeTxBuilder.createFakeTx;
-import static org.phorej.testing.FakeTxBuilder.makeSolvedTestBlock;
+import static org.helixj.core.Coin.*;
+import static org.helixj.testing.FakeTxBuilder.createFakeTx;
+import static org.helixj.testing.FakeTxBuilder.makeSolvedTestBlock;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)

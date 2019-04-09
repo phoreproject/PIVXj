@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.jni;
+package org.helixj.jni;
 
-import org.phorej.core.TransactionConfidence;
+import org.helixj.core.TransactionConfidence;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

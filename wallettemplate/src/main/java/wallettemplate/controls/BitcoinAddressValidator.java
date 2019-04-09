@@ -14,9 +14,9 @@
 
 package wallettemplate.controls;
 
-import org.phorej.core.Address;
-import org.phorej.core.AddressFormatException;
-import org.phorej.core.NetworkParameters;
+import org.helixj.core.Address;
+import org.helixj.core.AddressFormatException;
+import org.helixj.core.NetworkParameters;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import wallettemplate.utils.TextFieldValidator;

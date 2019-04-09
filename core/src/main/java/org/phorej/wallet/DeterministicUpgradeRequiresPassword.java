@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.phorej.wallet;
+package org.helixj.wallet;
 
 /**
  * Indicates that the pre-HD random wallet is encrypted, so you should try the upgrade again after getting the

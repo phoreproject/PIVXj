@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core.listeners;
+package org.helixj.core.listeners;
 
-import org.phorej.core.Peer;
+import org.helixj.core.Peer;
 
 /**
  * <p>Implementors can listen to events indicating a peer disconnecting.</p>

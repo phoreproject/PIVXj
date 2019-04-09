@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.signers;
+package org.helixj.signers;
 
 /**
  * A signer that doesn't have any state to be serialized.

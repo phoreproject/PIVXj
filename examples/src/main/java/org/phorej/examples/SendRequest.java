@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.phorej.examples;
+package org.helixj.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import org.phorej.core.*;
-import org.phorej.kits.WalletAppKit;
-import org.phorej.params.TestNet3Params;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.Wallet.BalanceType;
+import org.helixj.core.*;
+import org.helixj.kits.WalletAppKit;
+import org.helixj.params.TestNet3Params;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

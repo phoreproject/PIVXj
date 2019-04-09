@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;

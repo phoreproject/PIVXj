@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.params.MainNetParams;
-import org.phorej.wallet.KeyChainGroup;
-import org.phorej.wallet.Wallet;
+import org.helixj.params.MainNetParams;
+import org.helixj.wallet.KeyChainGroup;
+import org.helixj.wallet.Wallet;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.phorej.core.Utils.HEX;
+import static org.helixj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class BloomFilterTest {

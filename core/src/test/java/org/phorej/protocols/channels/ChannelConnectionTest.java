@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.phorej.protocols.channels;
+package org.helixj.protocols.channels;
 
-import org.phorej.core.*;
-import org.phorej.testing.TestWithWallet;
-import org.phorej.utils.Threading;
-import org.phorej.wallet.Wallet;
-import org.phorej.wallet.WalletExtension;
-import org.phorej.wallet.WalletFiles;
-import org.phorej.wallet.WalletProtobufSerializer;
+import org.helixj.core.*;
+import org.helixj.testing.TestWithWallet;
+import org.helixj.utils.Threading;
+import org.helixj.wallet.Wallet;
+import org.helixj.wallet.WalletExtension;
+import org.helixj.wallet.WalletFiles;
+import org.helixj.wallet.WalletProtobufSerializer;
 
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -47,9 +47,9 @@ import java.util.Collection;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static org.phorej.core.Coin.*;
-import static org.phorej.protocols.channels.PaymentChannelCloseException.CloseReason;
-import static org.phorej.testing.FakeTxBuilder.createFakeBlock;
+import static org.helixj.core.Coin.*;
+import static org.helixj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import static org.helixj.testing.FakeTxBuilder.createFakeBlock;
 import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
 import static org.junit.Assert.*;
 
@@ -560,7 +560,7 @@ public class ChannelConnectionTest extends TestWithWallet {
     private static Wallet roundTripClientWallet(Wallet wallet) throws Exception {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
-        org.phorej.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.helixj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         StoredPaymentChannelClientStates state = new StoredPaymentChannelClientStates(null, failBroadcaster);
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
@@ -569,7 +569,7 @@ public class ChannelConnectionTest extends TestWithWallet {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
         StoredPaymentChannelServerStates state = new StoredPaymentChannelServerStates(null, failBroadcaster);
-        org.phorej.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.helixj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
 

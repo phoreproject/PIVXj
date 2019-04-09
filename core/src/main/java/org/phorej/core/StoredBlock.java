@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStore;
-import org.phorej.store.BlockStoreException;
+import org.helixj.store.BlockStore;
+import org.helixj.store.BlockStoreException;
 import com.google.common.base.Objects;
 
 import java.math.BigInteger;

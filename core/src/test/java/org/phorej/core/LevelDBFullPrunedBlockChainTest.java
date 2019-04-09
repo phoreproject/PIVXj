@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.store.BlockStoreException;
-import org.phorej.store.FullPrunedBlockStore;
-import org.phorej.store.LevelDBFullPrunedBlockStore;
+import org.helixj.store.BlockStoreException;
+import org.helixj.store.FullPrunedBlockStore;
+import org.helixj.store.LevelDBFullPrunedBlockStore;
 import org.junit.After;
 
 import java.io.File;

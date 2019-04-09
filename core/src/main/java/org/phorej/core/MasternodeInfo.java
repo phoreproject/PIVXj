@@ -1,4 +1,4 @@
-package org.phorej.core;
+package org.helixj.core;
 
 /**
  * Created by Eric on 2/8/2017.

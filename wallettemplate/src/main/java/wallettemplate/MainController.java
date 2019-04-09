@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.phorej.core.listeners.DownloadProgressTracker;
-import org.phorej.core.Coin;
-import org.phorej.utils.MonetaryFormat;
+import org.helixj.core.listeners.DownloadProgressTracker;
+import org.helixj.core.Coin;
+import org.helixj.utils.MonetaryFormat;
 import com.subgraph.orchid.TorClient;
 import com.subgraph.orchid.TorInitializationListener;
 import javafx.animation.FadeTransition;

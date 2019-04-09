@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.phorej.core;
+package org.helixj.core;
 
-import org.phorej.utils.*;
+import org.helixj.utils.*;
 
 import javax.annotation.*;
 import java.lang.ref.*;
@@ -131,7 +131,7 @@ public class TxConfidenceTable {
 
     /**
      * Called by peers when they see a transaction advertised in an "inv" message. It passes the data on to the relevant
-     * {@link org.phorej.core.TransactionConfidence} object, creating it if needed.
+     * {@link org.helixj.core.TransactionConfidence} object, creating it if needed.
      *
      * @return the number of peers that have now announced this hash (including the caller)
      */

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.phorej.uri;
+package org.helixj.uri;
 
 /**
  * <p>Exception to provide the following to {@link PhoreURI}:</p>
