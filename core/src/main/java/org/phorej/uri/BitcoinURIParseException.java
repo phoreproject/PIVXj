@@ -17,7 +17,7 @@
 package org.helixj.uri;
 
 /**
- * <p>Exception to provide the following to {@link PhoreURI}:</p>
+ * <p>Exception to provide the following to {@link HelixURI}:</p>
  * <ul>
  * <li>Provision of parsing error messages</li>
  * </ul>

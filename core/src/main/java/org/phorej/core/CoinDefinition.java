@@ -73,7 +73,7 @@ public class CoinDefinition {
     public static final boolean feeCanBeRaised = false;
 
     //
-    // Phore 0.12
+    // Helix 0.12
     //
     public static final int PROTOCOL_VERSION = 80011;          //version.h PROTOCOL_VERSION
     public static final int MIN_PROTOCOL_VERSION = 80011;        //version.h MIN_PROTO_VERSION

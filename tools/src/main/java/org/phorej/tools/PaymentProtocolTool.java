@@ -20,7 +20,7 @@ import org.helixj.crypto.TrustStoreLoader;
 import org.helixj.protocols.payments.PaymentProtocol;
 import org.helixj.protocols.payments.PaymentProtocolException;
 import org.helixj.protocols.payments.PaymentSession;
-import org.helixj.uri.PhoreURI;
+import org.helixj.uri.HelixURI;
 import org.helixj.uri.BitcoinURIParseException;
 import org.bitcoin.protocols.payments.Protos;
 
@@ -58,7 +58,7 @@ public class PaymentProtocolTool {
             } else if ("http".equals(uri.getScheme())) {
                 session = PaymentSession.createFromUrl(arg).get();
             } else if ("bitcoin".equals(uri.getScheme())) {
-                PhoreURI bcuri = new PhoreURI(arg);
+                HelixURI bcuri = new HelixURI(arg);
                 final String paymentRequestUrl = bcuri.getPaymentRequestUrl();
                 if (paymentRequestUrl == null) {
                     System.err.println("No r= param in bitcoin URI");

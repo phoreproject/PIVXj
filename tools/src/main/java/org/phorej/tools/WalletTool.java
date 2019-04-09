@@ -28,7 +28,7 @@ import org.helixj.protocols.payments.PaymentProtocolException;
 import org.helixj.protocols.payments.PaymentSession;
 import org.helixj.script.ScriptBuilder;
 import org.helixj.store.*;
-import org.helixj.uri.PhoreURI;
+import org.helixj.uri.HelixURI;
 import org.helixj.uri.BitcoinURIParseException;
 import org.helixj.utils.BriefLogFormatter;
 import org.helixj.wallet.DeterministicSeed;
@@ -1000,7 +1000,7 @@ public class WalletTool {
                 if (location.startsWith("http")) {
                     future = PaymentSession.createFromUrl(location, verifyPki);
                 } else {
-                    PhoreURI paymentRequestURI = new PhoreURI(location);
+                    HelixURI paymentRequestURI = new HelixURI(location);
                     future = PaymentSession.createFromBitcoinUri(paymentRequestURI, verifyPki);
                 }
                 PaymentSession session = future.get();

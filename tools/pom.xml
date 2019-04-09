@@ -28,7 +28,7 @@
   <artifactId>helixj-tools</artifactId>
 
   <name>helixj Tools</name>
-  <description>A collection of useful tools that use the phorem library to perform wallet operations</description>
+  <description>A collection of useful tools that use the helixm library to perform wallet operations</description>
 
   <build>
 

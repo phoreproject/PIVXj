@@ -98,7 +98,7 @@ public class SporkManager {
 
     public static final long SPORK_2_INSTANTSEND_ENABLED_DEFAULT                = 0;            // ON
     public static final long SPORK_3_INSTANTSEND_BLOCK_FILTERING_DEFAULT        = 0;            // ON
-    public static final long SPORK_5_INSTANTSEND_MAX_VALUE_DEFAULT              = 1000;         // 1000 PHR
+    public static final long SPORK_5_INSTANTSEND_MAX_VALUE_DEFAULT              = 1000;         // 1000 HLIX
     public static final long SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT     = 4070908800L;// OFF
     public static final long SPORK_9_SUPERBLOCKS_ENABLED_DEFAULT                = 4070908800L;// OFF
     public static final long SPORK_10_MASTERNODE_PAY_UPDATED_NODES_DEFAULT      = 4070908800L;// OFF
