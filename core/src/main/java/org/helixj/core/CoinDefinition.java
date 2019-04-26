@@ -104,8 +104,8 @@ public class CoinDefinition {
     static public long genesisBlockDifficultyTarget = 0x207fffff;         //main.cpp: LoadBlockIndex
     static public long genesisBlockTime = 1531496589L;                       //main.cpp: LoadBlockIndex
     static public long genesisBlockNonce = 192840;                         //main.cpp: LoadBlockIndex
-    static public String genesisHash = "0x79a3c45d6e2760efb4d6de76d34b1f4833ba919bc114e1da0f671b1700a78f08";  //main.cpp: hashGenesisBlock
-    static public String genesisMerkleRoot = "0x210fa744202cef1c9248d9f82efadaa1387341e5c4b85b7a87ae56866514ef27";
+    static public String genesisHash = "79a3c45d6e2760efb4d6de76d34b1f4833ba919bc114e1da0f671b1700a78f08";  //main.cpp: hashGenesisBlock
+    static public String genesisMerkleRoot = "210fa744202cef1c9248d9f82efadaa1387341e5c4b85b7a87ae56866514ef27";
     static public int genesisBlockValue = 0;                                                              //main.cpp: LoadBlockIndex
 
     //net.cpp strDNSSeed
@@ -126,7 +126,7 @@ public class CoinDefinition {
     public static final int testnetAddressHeader = 127;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS_TEST
     public static final int testnetp2shHeader = 19;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS_TEST
     public static final long testnetPacketMagic = 0x4f6c7e7a;      //
-    public static final String testnetGenesisHash =  "0x9c5129f0b7e850d5ee54aceacff2df8086e57629debb8dc57b192ad089eb9b44";
+    public static final String testnetGenesisHash =  "79a3c45d6e2760efb4d6de76d34b1f4833ba919bc114e1da0f671b1700a78f08";
     static public long testnetGenesisBlockDifficultyTarget = (0x207fffff);         //main.cpp: LoadBlockIndex
     static public long testnetGenesisBlockTime = 1531496589L;                       //main.cpp: LoadBlockIndex
     static public long testnetGenesisBlockNonce = (192838L);                         //main.cpp: LoadBlockIndex

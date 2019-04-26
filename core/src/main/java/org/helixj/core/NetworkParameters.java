@@ -138,7 +138,7 @@ public abstract class NetworkParameters {
         genesisBlock.setNonce(CoinDefinition.genesisBlockNonce);
         Transaction tx = new Transaction(n);
         try {
-            Script script = new ScriptBuilder().number(486604799).bigNum(4L).data("12 September 2017".getBytes()).build();
+            Script script = new ScriptBuilder().number(486604799).bigNum(4L).data("5 July 2018, the birth of Helix".getBytes()).build();
             System.out.println(script.toString());
 
             tx.addInput(new TransactionInput(n, tx, script.getProgram()));
