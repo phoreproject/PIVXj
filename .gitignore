@@ -16,3 +16,4 @@ libs/
 checkpoints
 checkpoints-testnet.txt
 checkpoints.txt
+classes/artifacts/helixj_core_jar/helixj-core.jar

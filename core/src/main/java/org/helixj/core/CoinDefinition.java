@@ -89,7 +89,7 @@ public class CoinDefinition {
 
     /** Zerocoin starting block height */
     public static final long TESTNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 201576;
-    public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 89994;
+    public static final long MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 90202;
 
     //
     //  Production
